@@ -55,28 +55,28 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">Inicio</a>
+                                 <a class="nav-link" href="index.blade.php">Inicio</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="about.html">Acerca</a>
+                                 <a class="nav-link" href="about.blade.php">Acerca</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="presupuestos.html">Presupuestos</a>
+                                 <a class="nav-link" href="presupuestos.blade.php">Presupuestos</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="accesorios.html">Accesorios</a>
+                                 <a class="nav-link" href="accesorios.blade.php">Accesorios</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="product.html">Componentes</a>
+                                 <a class="nav-link" href="product.blade.php">Componentes</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contacto</a>
+                                 <a class="nav-link" href="contact.blade.php">Contacto</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                               </li>
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="#">Iniciar Sesión</a>
+                                 <a class="nav-link" href="ini_sesion.blade.php">Iniciar Sesión</a>
                               </li>
                            </ul>
                         </div>
@@ -229,14 +229,14 @@
                   <div class="box_text">
                      <i><img src="images/thr2.png" alt="#"/></i>
                      <h3>Componentes</h3>
-                     <p>Si lo prefieres puedes buscar los componentes que deseas y añadirlos al carrito para así solo comprar lo que necesitas.  </p>
+                     <p>Si lo prefieres puedes buscar los componentes que deseas en nuestra página, comparar precios, marcas y añadirlos al carrito para que así solo compres lo que necesitas.  </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="box_text">
                      <i><img src="images/thr1.png" alt="#"/></i>
                      <h3>Accesorios</h3>
-                     <p>Consigue los mejores accesorios de las mejores marcas para tu setup, a los mejores precios. Teclados, Mouse, Monitores para tu PC. </p>
+                     <p>Consigue los mejores accesorios de las mejores marcas para tu setup, a los mejores precios. Teclados, Mouse, Monitores, todo lo necesario para tu setup gamer, oficina o PC. </p>
                   </div>
                </div>
             </div>
@@ -379,8 +379,8 @@
                                     <div class="col-md-9 offset-md-3">
                                        <div class="test_box">
                                           <i><img src="images/cos.png" alt="#"/></i>
-                                          <h4>Sandy Miller</h4>
-                                          <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
+                                          <h4>Miles Morales</h4>
+                                          <p>Tienen productos que no encontraba en otras páginas a buenos precios, además de que cuentan con grandes descuentos! Perfectos para armarte tu PC gamer.</p>
                                        </div>
                                     </div>
                                  </div>
@@ -394,8 +394,8 @@
                                     <div class="col-md-9 offset-md-3">
                                        <div class="test_box">
                                           <i><img src="images/cos.png" alt="#"/></i>
-                                          <h4>Sandy Miller</h4>
-                                          <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
+                                          <h4>Mary Jeane</h4>
+                                          <p>Los envíos son muy rápidos! No tardaron en enviarme mi monitor al otro extremo de país!</p>
                                        </div>
                                     </div>
                                  </div>
