@@ -108,7 +108,7 @@
                                  <span>Descuentos</span>
                                  <h1>Descuentos del Buen Fin</h1>
                                  <p>Hasta un 30% de descuentos en productos seleccionados, meses sin intereses y envios gratis.</p>
-                                 <a href="#">Buy Now </a> 
+                                 <a href="#">Ver descuentos</a> 
                               </div>
                            </div>
                            <div class="col-md-6">
@@ -171,7 +171,7 @@
                                  <span>PC Gaming</span>
                                  <h1>Componentes</h1>
                                  <p>Encuentra los mejores componentes de las mejores marcas, todo lo necesario para armar tu PC gamer.</p>
-                                 <a href="#">Buy Now </a> <a href="contact.html">Contact </a>
+                                 <a href="#">Comprar ahora </a>
                               </div>
                            </div>
                            <div class="col-md-6">
@@ -221,22 +221,22 @@
                <div class="col-md-4">
                   <div class="box_text">
                      <i><img src="images/thr.png" alt="#"/></i>
-                     <h3>Computer</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box_text">
-                     <i><img src="images/thr1.png" alt="#"/></i>
-                     <h3>Laptop</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                     <h3>Computadoras</h3>
+                     <p>Con Compratech puedes usar nuestro configurador para ver las opciones que computadoras que tenemos para ti las cuales se adecue a tu presupuesto y necesidades. </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="box_text">
                      <i><img src="images/thr2.png" alt="#"/></i>
-                     <h3>Tablet</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                     <h3>Componentes</h3>
+                     <p>Si lo prefieres puedes buscar los componentes que deseas y añadirlos al carrito para así solo comprar lo que necesitas.  </p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <i><img src="images/thr1.png" alt="#"/></i>
+                     <h3>Accesorios</h3>
+                     <p>Consigue los mejores accesorios de las mejores marcas para tu setup, a los mejores precios. Teclados, Mouse, Monitores para tu PC. </p>
                   </div>
                </div>
             </div>
@@ -324,14 +324,14 @@
             <div class="row">
                <div class="col-md-6">
                   <div class="titlepage">
-                     <p>Every Computer and laptop</p>
-                     <h2>Up to 40% off !</h2>
-                     <a class="read_more" href="#">Shop Now</a>
+                     <p>Consigue los mejores componentes en Compratech</p>
+                     <h2>Descuentes Especiales</h2>
+                     <a class="read_more" href="#">Ver Más</a>
                   </div>
                </div>
                <div class="col-md-6">
                   <div class="laptop_box">
-                     <figure><img src="images/pc.png" alt="#"/></figure>
+                     <figure><img src="images/pc_gamer_1.jpg" alt="#"/></figure>
                   </div>
                </div>
             </div>
@@ -344,7 +344,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Customer Review</h2>
+                     <h2>Reseñas de Compradores</h2>
                   </div>
                </div>
             </div>
@@ -364,8 +364,8 @@
                                     <div class="col-md-9 offset-md-3">
                                        <div class="test_box">
                                           <i><img src="images/cos.png" alt="#"/></i>
-                                          <h4>Sandy Miller</h4>
-                                          <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
+                                          <h4>Marco Antonio</h4>
+                                          <p>Excelentes precios, y una buena cantidad de componentes, súper recomendado xD</p>
                                        </div>
                                     </div>
                                  </div>
@@ -417,50 +417,13 @@
          </div>
       </div>
       <!-- end customer -->
-
-      <!--  contact -->
-      <div class="contact">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Contact Now</h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <form id="request" class="main_form">
-                     <div class="row">
-                        <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
-                        </div>
-                        <div class="col-md-12">
-                           <button class="send_btn">Send</button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end contact -->
       <!--  footer -->
       <footer>
          <div class="footer">
             <div class="container">
                <div class="row">
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <img class="logo1" src="images/logo1.png" alt="#"/>
+                     <img class="logo1" src="images/logo3.png" alt="#"/>
                      <ul class="social_icon">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -469,22 +432,22 @@
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <h3>About Us</h3>
+                     <h3>Acerca de Nosotros</h3>
                      <ul class="about_us">
-                        <li>dolor sit amet, consectetur<br> magna aliqua. Ut enim ad <br>minim veniam, <br> quisdotempor incididunt r</li>
+                        <li>Somos una empresa mexicana dedicada a la venta de equipo de cómputo para atender las necesidades del mercado</li>
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <h3>Contact Us</h3>
+                     <h3>Contacto</h3>
                      <ul class="conta">
-                        <li>dolor sit amet,<br> consectetur <br>magna aliqua.<br> quisdotempor <br>incididunt ut e </li>
+                        <li>Teléfono: 722-413-2124 <br>Email: ventas@compratech.com</li>
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                      <form class="bottom_form">
-                        <h3>Newsletter</h3>
-                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-                        <button class="sub_btn">subscribe</button>
+                        <h3>Noticias</h3>
+                        <input class="enter" placeholder="Correo" type="text" name="Enter your email">
+                        <button class="sub_btn">Suscribirce</button>
                      </form>
                   </div>
                </div>
@@ -493,7 +456,7 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
+                        <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> La Carols</a></p>
                      </div>
                   </div>
                </div>
