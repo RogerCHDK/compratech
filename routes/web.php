@@ -20,3 +20,8 @@ Route::get('/', function () {
 Route::get('bienvenida', function () {
     return view('bienvenida');
 });
+
+
+Route::get('/accessorios', function () {
+    return view('accesorios');
+})->name('accesorios');

@@ -19,17 +19,17 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item ">
-                                 <a class="nav-link" href="index.html">Inicio</a>
-                              </li>
                               <li class="nav-item active">
-                                 <a class="nav-link" href="about.html">Acerca</a>
+                                 <a class="nav-link" href="bienvenida">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Acerca</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="presupuestos.html">Presupuestos</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="accesorios.html">Accesorios</a>
+                                 <a class="nav-link" href="{{route('accesorios')}}">Accesorios</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="product.html">Componentes</a>

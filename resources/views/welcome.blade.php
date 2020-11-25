@@ -94,6 +94,7 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                     <a href="bienvenida">Index Compratech</a>
+                    <a href="accesorios">Accesorios Compratech</a>
                 </div>
             </div>
         </div>
