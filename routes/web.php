@@ -22,6 +22,14 @@ Route::get('bienvenida', function () {
 });
 
 
-Route::get('/accessorios', function () {
+Route::get('accesorios', function () {
     return view('accesorios');
-})->name('accesorios');
+});
+
+Route::get('acercade', function () {
+    return view('acercade');
+});
+
+Route::get('presupuestos', function () {
+    return view('presupuestos');
+});

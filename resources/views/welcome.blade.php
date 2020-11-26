@@ -95,6 +95,8 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                     <a href="bienvenida">Index Compratech</a>
                     <a href="accesorios">Accesorios Compratech</a>
+                    <a href="acercade">Acerca de</a>
+                    <a href="presupuestos">Presupuestos</a>
                 </div>
             </div>
         </div>

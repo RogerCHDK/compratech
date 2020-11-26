@@ -81,7 +81,7 @@ h2 {
 }
 
 h3 {
-     font-size: 18px;
+     font-size: 30px;
 }
 
 h4 {
@@ -364,7 +364,7 @@ ul.btn li:last-child {
 .header {
      width: 100%;
      padding: 30px 30px;
-     background: transparent;
+     background: #349ff6;
      position: absolute;
      z-index: 999;
 }
@@ -1030,6 +1030,10 @@ ul.social_icon li a:hover {
      padding: 90px 0;
 }
 
+.about .container div{
+     margin-top: 30px;
+}
+
 .about .titlepage {
      text-align: left;
 }
@@ -1037,6 +1041,7 @@ ul.social_icon li a:hover {
 .about .titlepage h2 {
      max-width: inherit;
      border: inherit;
+     color: #666666;
 }
 
 .about .titlepage p {
@@ -1087,4 +1092,13 @@ ul.social_icon li a:hover {
 
 
 /** end laptop **/
+
+.objetivos{
+	display: flex;
+	flex-direction: row;
+}
+.objetivos .text-center{
+	padding: 5px;
+}
+
 

@@ -81,7 +81,7 @@ h2 {
 }
 
 h3 {
-     font-size: 18px;
+     font-size: 30px;
 }
 
 h4 {
@@ -187,6 +187,10 @@ img {
 
 .badge {
      font-weight: 500;
+}
+
+.container div{
+     margin-top: 30px;
 }
 
 blockquote {
@@ -1030,6 +1034,10 @@ ul.social_icon li a:hover {
      padding: 90px 0;
 }
 
+.about .container div{
+     margin-top: 30px;
+}
+
 .about .titlepage {
      text-align: left;
 }
@@ -1037,6 +1045,7 @@ ul.social_icon li a:hover {
 .about .titlepage h2 {
      max-width: inherit;
      border: inherit;
+     color: #666666;
 }
 
 .about .titlepage p {
@@ -1087,4 +1096,13 @@ ul.social_icon li a:hover {
 
 
 /** end laptop **/
+
+.objetivos{
+	display: flex;
+	flex-direction: row;
+}
+.objetivos .text-center{
+	padding: 5px;
+}
+
 

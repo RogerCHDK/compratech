@@ -7,7 +7,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="{!! asset('estilo/images/logo3.png') !!}" alt="#" width="156px" height="102px"/></a>
+                              <a href="bienvenida"><img src="{!! asset('estilo/images/logo3.png') !!}" alt="#" width="156px" height="102px"/></a>
                            </div>
                         </div>
                      </div>
@@ -23,13 +23,13 @@
                                  <a class="nav-link" href="bienvenida">Inicio</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="#">Acerca</a>
+                                 <a class="nav-link" href="acercade">Acerca</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="presupuestos.html">Presupuestos</a>
+                                 <a class="nav-link" href="presupuestos">Presupuestos</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="{{route('accesorios')}}">Accesorios</a>
+                                 <a class="nav-link" href="accesorios">Accesorios</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="product.html">Componentes</a>

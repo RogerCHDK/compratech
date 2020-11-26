@@ -67,7 +67,7 @@
                            </div>
                            <div class="col-md-6">
                               <div class="text_img">
-                                 <figure><img src="images/cgamerpc.png" alt="#"/></figure>
+                                 <figure><img src="{!! asset('estilo/images/cgamerpc.png') !!}" alt="#"/></figure>
                               </div>
                            </div>
                         </div>
@@ -88,7 +88,7 @@
                            </div>
                            <div class="col-md-6">
                               <div class="text_img">
-                                 <figure><img src="images/componentes.png" alt="#"/></figure>
+                                 <figure><img src="{!! asset('estilo/images/componentes.png') !!}" alt="#"/></figure>
                               </div>
                            </div>
                         </div>
@@ -109,7 +109,7 @@
                            </div>
                            <div class="col-md-6">
                               <div class="text_img">
-                                 <figure><img src="images/amd-ryzen.jpg" alt="#"/></figure>
+                                 <figure><img src="{!! asset('estilo/images/amd-ryzen.jpg') !!}"alt="#"/></figure>
                               </div>
                            </div>
                         </div>
@@ -132,21 +132,21 @@
             <div class="row">
                <div class="col-md-4">
                   <div class="box_text">
-                     <i><img src="images/thr.png" alt="#"/></i>
+                     <i><img src="{!! asset('estilo/images/thr.png') !!}" alt="#"/></i>
                      <h3>Computadoras</h3>
                      <p>Con Compratech puedes usar nuestro configurador para ver las opciones que computadoras que tenemos para ti las cuales se adecue a tu presupuesto y necesidades. </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="box_text">
-                     <i><img src="images/thr2.png" alt="#"/></i>
+                     <i><img src="{!! asset('estilo/images/thr2.png') !!}" alt="#"/></i>
                      <h3>Componentes</h3>
                      <p>Si lo prefieres puedes buscar los componentes que deseas en nuestra página, comparar precios, marcas y añadirlos al carrito para que así solo compres lo que necesitas.  </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="box_text">
-                     <i><img src="images/thr1.png" alt="#"/></i>
+                     <i><img src="{!! asset('estilo/images/thr1.png') !!}" alt="#"/></i>
                      <h3>Accesorios</h3>
                      <p>Consigue los mejores accesorios de las mejores marcas para tu setup, a los mejores precios. Teclados, Mouse, Monitores, todo lo necesario para tu setup gamer, oficina o PC. </p>
                   </div>
@@ -171,55 +171,55 @@
                      <div class="row">
                         <div class="col-md-4 margin_bottom1">
                            <div class="product_box">
-                              <figure><img src="images/monitores.jpg" alt="#" /></figure>
+                              <figure><img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" /></figure>
                               <h3>Monitores</h3>
                            </div>
                         </div>
                         <div class="col-md-4 margin_bottom1">
                            <div class="product_box">
-                              <figure><img src="images/perifericos.jpg" alt="#" /></figure>
+                              <figure><img src="{!! asset('estilo/images/perifericos.jpg') !!}" alt="#" /></figure>
                               <h3>Accesorios</h3>
                            </div>
                         </div>
                         <div class="col-md-4 margin_bottom1">
                            <div class="product_box">
-                              <figure><img src="images/tarjeta_video.jpg" alt="#"/></figure>
+                              <figure><img src="{!! asset('estilo/images/tarjeta_video.jpg') !!}" alt="#"/></figure>
                               <h3>Tarjetas de Video</h3>
                            </div>
                         </div>
                         <div class="col-md-4 margin_bottom1">
                            <div class="product_box">
-                              <figure><img src="images/proce.jpg" alt="#"/></figure>
+                              <figure><img src="{!! asset('estilo/images/proce.jpg') !!}" alt="#"/></figure>
                               <h3>Procesadores</h3>
                            </div>
                         </div>
                         <div class="col-md-4 margin_bottom1">
                            <div class="product_box">
-                              <figure><img src="images/mothers.jpg" alt="#"/></figure>
+                              <figure><img src="{!! asset('estilo/images/mothers.jpg') !!}" alt="#"/></figure>
                               <h3>Motherboars</h3>
                            </div>
                         </div>
                         <div class="col-md-4 margin_bottom1">
                            <div class="product_box">
-                              <figure><img src="images/almacen.jpg" alt="#"/></figure>
+                              <figure><img src="{!! asset('estilo/images/almacen.jpg') !!}" alt="#"/></figure>
                               <h3>Almacenamiento</h3>
                            </div>
                         </div>
                         <div class="col-md-4">
                            <div class="product_box">
-                              <figure><img src="images/memram.jpg" alt="#"/></figure>
+                              <figure><img src="{!! asset('estilo/images/memram.jpg') !!}" alt="#"/></figure>
                               <h3>Memoria RAM</h3>
                            </div>
                         </div>
                         <div class="col-md-4">
                            <div class="product_box">
-                              <figure><img src="images/fuentep.jpg" alt="#"/></figure>
+                              <figure><img src="{!! asset('estilo/images/fuentep.jpg') !!}" alt="#"/></figure>
                               <h3>Fuentes de Poder</h3>
                            </div>
                         </div>
                         <div class="col-md-4">
                            <div class="product_box">
-                              <figure><img src="images/gabo.png" alt="#"/></figure>
+                              <figure><img src="{!! asset('estilo/images/gabo.png') !!}" alt="#"/></figure>
                               <h3>Gabinetes</h3>
                            </div>
                         </div>
@@ -243,7 +243,7 @@
                </div>
                <div class="col-md-6">
                   <div class="laptop_box">
-                     <figure><img src="images/pc_gamer_1.jpg" alt="#"/></figure>
+                     <figure><img src="{!! asset('estilo/images/pc_gamer_1.jpg') !!}" alt="#"/></figure>
                   </div>
                </div>
             </div>
@@ -275,7 +275,7 @@
                                  <div class="row">
                                     <div class="col-md-9 offset-md-3">
                                        <div class="test_box">
-                                          <i><img src="images/cos.png" alt="#"/></i>
+                                          <i><img src="{!! asset('estilo/images/cos.png') !!}" alt="#"/></i>
                                           <h4>Marco Antonio</h4>
                                           <p>Excelentes precios, y una buena cantidad de componentes, súper recomendado xD</p>
                                        </div>
@@ -290,7 +290,7 @@
                                  <div class="row">
                                     <div class="col-md-9 offset-md-3">
                                        <div class="test_box">
-                                          <i><img src="images/cos.png" alt="#"/></i>
+                                          <i><img src="{!! asset('estilo/images/cos.png') !!}" alt="#"/></i>
                                           <h4>Miles Morales</h4>
                                           <p>Tienen productos que no encontraba en otras páginas a buenos precios, además de que cuentan con grandes descuentos! Perfectos para armarte tu PC gamer.</p>
                                        </div>
@@ -305,7 +305,7 @@
                                  <div class="row">
                                     <div class="col-md-9 offset-md-3">
                                        <div class="test_box">
-                                          <i><img src="images/cos.png" alt="#"/></i>
+                                          <i><img src="{!! asset('estilo/images/cos.png') !!}" alt="#"/></i>
                                           <h4>Mary Jeane</h4>
                                           <p>Los envíos son muy rápidos! No tardaron en enviarme mi monitor al otro extremo de país!</p>
                                        </div>
