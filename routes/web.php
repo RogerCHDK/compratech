@@ -21,7 +21,6 @@ Route::get('bienvenida', function () {
     return view('bienvenida');
 });
 
-
 Route::get('accesorios', function () {
     return view('accesorios');
 });
@@ -32,4 +31,16 @@ Route::get('acercade', function () {
 
 Route::get('presupuestos', function () {
     return view('presupuestos');
+});
+
+Route::get('componentes', function () {
+    return view('componentes');
+});
+
+Route::get('registro', function () {
+    return view('registro');
+});
+
+Route::get('iniciarsesion', function () {
+    return view('iniciarsesion');
 });

@@ -97,6 +97,9 @@
                     <a href="accesorios">Accesorios Compratech</a>
                     <a href="acercade">Acerca de</a>
                     <a href="presupuestos">Presupuestos</a>
+                    <br>
+                    <a href="componentes">Componentes</a>
+                    <a href="registro">Registro</a>
                 </div>
             </div>
         </div>
