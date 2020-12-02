@@ -129,7 +129,7 @@
       <!-- three_box -->
       <div class="three_box">
          <div class="container">
-            <div class="row">
+            <div class="row" style="margin-top: -60px;">
                <div class="col-md-4">
                   <div class="box_text">
                      <i><img src="{!! asset('estilo/images/thr.png') !!}" alt="#"/></i>
@@ -156,7 +156,9 @@
       </div>
       <!-- three_box -->
       <!-- products -->
-         @include('template\productos')
+        <div class="contenedor">
+         @include('template\caja_productos')
+        </div>
       <!-- end products -->
       <!-- laptop  section -->
       <div class="laptop">

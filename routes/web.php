@@ -33,8 +33,8 @@ Route::get('presupuestos', function () {
     return view('presupuestos');
 });
 
-Route::get('componentes', function () {
-    return view('componentes');
+Route::get('productos', function () {
+    return view('productos');
 });
 
 Route::get('registro', function () {
@@ -44,3 +44,16 @@ Route::get('registro', function () {
 Route::get('iniciarsesion', function () {
     return view('iniciarsesion');
 });
+
+Route::get('vercomponentes', function () {
+    return view('articulos.vercomponentes');
+});
+
+Route::get('articulo', function () {
+    return view('articulos.articulo');
+});
+
+Route::get('carrito_compras', function () {
+    return view('carrito_compras');
+});
+

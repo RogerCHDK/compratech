@@ -29,16 +29,13 @@
                            <a class="nav-link" href="presupuestos">Presupuestos</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="accesorios">Accesorios</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="componentes">Componentes</a>
+                           <a class="nav-link" href="productos">Productos</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="registro">Regístrate</a>
                         </li>
                         <li class="nav-item d_none">
-                           <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                           <a class="nav-link" href="carrito_compras"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                         </li>
                         <li class="nav-item d_none">
                            <a class="nav-link" href="iniciarsesion">Iniciar Sesión</a>
