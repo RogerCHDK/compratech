@@ -86,8 +86,6 @@
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
-                    <a href="{{route('productos.index')}}">Productos</a> 
-                    <a href="{{route('ram.index')}}">Ram</a> 
                 </div>
             </div>
         </div>
