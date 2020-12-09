@@ -17,7 +17,7 @@ class CategoriasMigration extends Migration
             $table->id();
             $table->string('nombre');
             $table->integer('status');
-            $table->timestamps();
+            $table->timestamps(); 
         });
     }
 
