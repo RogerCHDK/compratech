@@ -414,6 +414,308 @@ class productos extends Seeder
             'categoria_id' => '5',
             'status' => '1',
         ]);
+//////////////////////////////////////////////////////////
+        DB::table('productos')->insert([ 
+            'marca' => 'Hitachi',
+            'nombre' => 'New Pull',
+            'precio' => '495',  
+            'descripcion' => 'Disco duro Hitachi SATA III, modelo HUA722020ALA330',
+            'stock' => '99',
+            'categoria_id' => '3',
+            'status' => '1',
+        ]);
 
+        DB::table('productos')->insert([ 
+            'marca' => 'Seagate',
+            'nombre' => 'Seagate ST1000DM003',
+            'precio' => '721.96',  
+            'descripcion' => 'Disco duro para ordenador de sobremesa',
+            'stock' => '99',
+            'categoria_id' => '3',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Toshiba',
+            'nombre' => 'Toshiba P300 HDWD110UZSVA',
+            'precio' => '1019',  
+            'descripcion' => 'Tamaño de 3.5", apto para pc, incrementa el rendimiento de tu equipo.',
+            'stock' => '99',
+            'categoria_id' => '3',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Seagate',
+            'nombre' => 'Seagate BarraCuda',
+            'precio' => '1573.39',  
+            'descripcion' => 'Disco duro interno para computadora de sobremesa con embalaje abrefácil, modelo ST2000DM008',
+            'stock' => '99',
+            'categoria_id' => '3',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Western Digital',
+            'nombre' => 'Western Digital WD Blue',
+            'precio' => '1519',  
+            'descripcion' => 'Disco Duro para PC, modelo WD10EZRZ',
+            'stock' => '99',
+            'categoria_id' => '3',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Kingston',
+            'nombre' => 'Kingston SSD A400',
+            'precio' => '549',  
+            'descripcion' => 'Mejora dramáticamente la capacidad de respuesta de su sistema existente con velocidades increíbles de inicio, carga y transferencia, comparadas con los discos duros mecánicos. Usando un controlador de última generación para leer y escribir a velocidades de hasta 500MB/seg y 450MB/seg1, este SSD es 10 veces más rápido que un disco duro tradicional',
+            'stock' => '99',
+            'categoria_id' => '3',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Netac',
+            'nombre' => 'Netac 128 GB SSD',
+            'precio' => '599.99',  
+            'descripcion' => 'Modelo B088BVGW54. Hasta 510MB/s de velocidades de lectura, Netac SSD N530s es la opción ideal y adecuada cuando necesita actualizar una unidad de estado sólido convencional en lugar de disco duro (HDD). En comparación con el estándar industrial, la unidad N530s de estado sólido interno de Netac admite todas las características básicas y exclusivas a un valor excepcional con tecnología 3D NAND y un rendimiento sólido.',
+            'stock' => '99',
+            'categoria_id' => '3',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Seagate',
+            'nombre' => 'Seagate FireCuda',
+            'precio' => '1515.16',  
+            'descripcion' => 'Modelo ST1000LXZ15/LX015. La unidad SSHD FireCuda se ha diseñado específicamente para ofrecer una experiencia de juego superior e un uso intensivo sostenido y la latencia más baja. Los jugadores pueden beneficiarse de un rendimiento 5 veces superior que las HDD estándar y más capacidad que las SSD.',
+            'stock' => '99',
+            'categoria_id' => '3',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'SanDisk',
+            'nombre' => 'SanDisk SDSSDA-480G-G26',
+            'precio' => '1399',  
+            'descripcion' => 'Modelo SDSSDA-480G-G26. Unidad de estado solido SSD Sandisk Plus 480GB, SATA 3, 2.5, 7mm. Ventilador de piso con opción a montarse en pared. Motor de alta capacidad, fabricado con alambre de cobre al interior. Switch de 3 velocidades rotatorias.',
+            'stock' => '99',
+            'categoria_id' => '3',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Western Digital',
+            'nombre' => 'WD Blue 3D NAND',
+            'precio' => '1599',  
+            'descripcion' => 'Modelo WDS500G2B0A. Un disco WD Blue SSD SATA 3D NAND utiliza la tecnología 3D NAND no solo para ofrecer capacidades más altas (hasta 4 TB en el factor de forma 2,5 in 7 mm1) que las generaciones anteriores de discos WD Blue SSD, sino también para ayudar a reducir la interferencia entre celdas para brindar mayor confiabilidad.',
+            'stock' => '99',
+            'categoria_id' => '3',
+            'status' => '1',
+        ]);
+
+        ////////////////////////////////////////////////
+
+        DB::table('productos')->insert([ 
+            'marca' => 'ADATA',
+            'nombre' => 'XPG SPECTRIX D41 DDR4 RGB',
+            'precio' => '789',  
+            'descripcion' => 'Reúne un rendimiento excepcional y una iluminación LED RGB fascinante para ofrecerte una vista impactante y una impresionante actualización para tu PC o laptop',
+            'stock' => '99',
+            'categoria_id' => '1',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'ADATA',
+            'nombre' => 'XPG Hunter DDR4',
+            'precio' => '699',  
+            'descripcion' => 'Con una placa de circuito impreso (PCB) negra moderna y un diseño limpio, XPG HUNTER, combina casi con cualquier motherboard. Con las ventajas de DDR4 y varias opciones de densidad, tu XPG HUNTER proporciona a los entusiastas del bricolaje de PC, a los jugadores y a los que les vuelve loco el overclocking.',
+            'stock' => '99',
+            'categoria_id' => '1',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Corsair',
+            'nombre' => 'Vengeance LPX',
+            'precio' => '709',  
+            'descripcion' => 'Diseñado para overclocking de alto rendimiento',
+            'stock' => '99',
+            'categoria_id' => '1',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'ADATA',
+            'nombre' => 'XPG SPECTRIX D60G',
+            'precio' => '889',  
+            'descripcion' => 'Cuenta con un diseño de tira de luz RGB doble excepcional que le da la mayor área superficial RGB de cualquier módulo de memoria! Además, cuenta con una amplia gama de frecuencias de 3000 a 4133 MHz y admite los perfiles Intel XMP 2.0 para facilitar el aumento de la velocidad del reloj.',
+            'stock' => '99',
+            'categoria_id' => '1',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'ADATA',
+            'nombre' => 'Adata DDR4, 2400MHz, 8GB, Non-ECC',
+            'precio' => '609',  
+            'descripcion' => 'Memoria RAM Adata DDR4, 2400MHz, 8GB, Non-ECC',
+            'stock' => '99',
+            'categoria_id' => '1',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'ADATA',
+            'nombre' => 'XPG SPECTRIX D60G RGB',
+            'precio' => '1529',  
+            'descripcion' => 'DDR4, 3200MHz, 16GB, Non-ECC, CL16, XMP',
+            'stock' => '99',
+            'categoria_id' => '1',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Team Group',
+            'nombre' => 'TF4D48G3200HC16C01 White',
+            'precio' => '909',  
+            'descripcion' => 'La “R” en el difusor térmico representa la Revolución. El difusor térmico está fabricado con un material metálico más ligero y más delgado. El diseño de la “R” hueca es altamente estereoscópico y hace juego con el área luminosa ultra gran angular.',
+            'stock' => '99',
+            'categoria_id' => '1',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'ADATA',
+            'nombre' => 'XPG Gammix D30 Red DDR4',
+            'precio' => '699',  
+            'descripcion' => 'GAMMIX D30 te ofrece un rendimiento excelente con velocidades que oscilan entre 2666 MHz y 3600 MHz y es compatible con las plataformas X299 de Intel de 2666 MHz y AM4/Ryzen de AMD.',
+            'stock' => '99',
+            'categoria_id' => '1',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'ADATA',
+            'nombre' => 'AX4U266638G16-SBHT XPG Hunter',
+            'precio' => '737',  
+            'descripcion' => 'Si eres fanático de los juegos en línea o usas tu ordenador para trabajar con programas o aplicaciones pesadas, esta memoria es para ti. Gracias a su velocidad de 2666 MHz, podrás disfrutar de un alto rendimiento y hacer tus trabajos de manera rápida y efectiva.',
+            'stock' => '99',
+            'categoria_id' => '1',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'ADATA',
+            'nombre' => 'AX4U300038G16-SB41 XPG Spectrix D41',
+            'precio' => '913',  
+            'descripcion' => 'Si eres fanático de los juegos en línea o usas tu ordenador para trabajar con programas o aplicaciones pesadas, esta memoria es para ti. Gracias a su velocidad de 2666 MHz, podrás disfrutar de un alto rendimiento y hacer tus trabajos de manera rápida y efectiva.',
+            'stock' => '99',
+            'categoria_id' => '1',
+            'status' => '1',
+        ]);
+        ///////////
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Cooler Master',
+            'nombre' => 'MasterBox Q500L',
+            'precio' => '1579',  
+            'descripcion' => 'Con Ventana, Midi-Tower, ATX/Micro-ATX/Mini-ITX, USB 3.0, sin Fuente, Negro',
+            'stock' => '99',
+            'categoria_id' => '2',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Quaroni',
+            'nombre' => 'Quaroni QCMT03',
+            'precio' => '396',  
+            'descripcion' => 'Gabinete quaroni para tecnologia micro atx, panel frontal con acceso a puertos usb 2.0, audio con un excelente diseo, elegante e innovador.',
+            'stock' => '99',
+            'categoria_id' => '2',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'XPG',
+            'nombre' => 'XPG BATTLECRUISER',
+            'precio' => '396',  
+            'descripcion' => 'Gabinete quaroni para tecnologia micro atx, panel frontal con acceso a puertos usb 2.0, audio con un excelente diseo, elegante e innovador.',
+            'stock' => '99',
+            'categoria_id' => '2',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'XPG',
+            'nombre' => 'XPG INVADER',
+            'precio' => '1719',  
+            'descripcion' => 'XPG INVADER, es nuestro gabinete de media torre, más versátil, ofreciendo dinamismo, elegancia y un diseño único que no necesita herramientas. Con alto flujo de aire, luz RGB descendente y frontal, personalizable con el controlador combinado XPG Prime ARGB.',
+            'stock' => '99',
+            'categoria_id' => '2',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Aerocool',
+            'nombre' => 'Aerocool Cylon',
+            'precio' => '749',  
+            'descripcion' => 'Elegante barra trasera LED con 13 modos de luz en el panel frontal. Seis modos de luz de flujo RGB. Siete modos de color sólido.',
+            'stock' => '99',
+            'categoria_id' => '2',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Acteck',
+            'nombre' => 'Acteck G200',
+            'precio' => '487',  
+            'descripcion' => 'USB 2.0, incluye Fuente de 500W, Negro',
+            'stock' => '99',
+            'categoria_id' => '2',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'ASUS',
+            'nombre' => 'ASUS ROG Strix Helios',
+            'precio' => '7219',  
+            'descripcion' => 'USB 3.1, sin Fuente, Negro',
+            'stock' => '99',
+            'categoria_id' => '2',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'MSI',
+            'nombre' => 'MSI MAG FORGE 100R',
+            'precio' => '1599',  
+            'descripcion' => 'Con Ventana, Midi-Tower, ATX/Micro-ATX/Mini-ATX, USB 3.2, sin Fuente, Negro',
+            'stock' => '99',
+            'categoria_id' => '2',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Acteck',
+            'nombre' => 'Acteck Slim Atom',
+            'precio' => '629',  
+            'descripcion' => '2x USB, incluye Fuente de 450W, Negro',
+            'stock' => '99',
+            'categoria_id' => '2',
+            'status' => '1',
+        ]);
+
+        DB::table('productos')->insert([ 
+            'marca' => 'Quaroni',
+            'nombre' => 'Quaroni QCMT03',
+            'precio' => '396',  
+            'descripcion' => 'USB 2.0, con Fuente de 400W, Negro/Plata',
+            'stock' => '99',
+            'categoria_id' => '2',
+            'status' => '1',
+        ]);
     }
 }
