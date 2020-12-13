@@ -8,6 +8,9 @@
             </div>
          </div>
       </div>
+   </div>   
+
+   <div class="contenedor">
       <div class="row">
          <div class="col-md-12">
             <div class="our_products">

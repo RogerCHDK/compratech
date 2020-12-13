@@ -54,6 +54,17 @@ Route::get('articulo', function () {
 });
 
 Route::get('carrito_compras', function () {
-    return view('carrito_compras');
+    return view('compra.carrito_compras');
 });
 
+Route::get('carrito_compras', function () {
+    return view('compra.carrito_compras');
+});
+
+Route::get('continuar_compra1', function () {
+    return view('compra.continuar_compra1');
+});
+
+Route::get('continuar_compra2', function () {
+    return view('compra.continuar_compra2');
+});
