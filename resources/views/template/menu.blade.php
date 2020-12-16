@@ -24,7 +24,7 @@
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="acercade">Acerca</a>
-                        </li>
+                        </li> 
                         <li class="nav-item">
                            <a class="nav-link" href="presupuestos">Presupuestos</a>
                         </li>

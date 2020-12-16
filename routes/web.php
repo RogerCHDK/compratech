@@ -18,11 +18,8 @@ Route::get('/', function () {
 });
 
 Route::resource('productos','ProductosController'); 
-Route::resource('ram','RamController'); 
-Route::resource('almacenamiento','AlmacenamientoController');
 Route::resource('computadoras','ComputadorasController');
 Route::resource('fuente_poder','FuentePoderController');
-Route::resource('gabinetes','GabinetesController');
 Route::resource('procesadores','ProcesadoresController');
 Route::resource('tarjeta_madre','TarjertaMadreController');
 Route::resource('tarjeta_video','TarjetaVideoController');
