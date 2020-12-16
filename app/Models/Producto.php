@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Producto extends Model
 {
     protected $table= 'productos'; 
-   	protected $fillable = ['marca','precio','descripcion','stock','categoria_id','status','nombre'];
+    protected $fillable = ['marca','precio','descripcion','stock','categoria_id','status','nombre'];
+    public function fotos()
+    {
+        return $this->hasMany(FotoProducto::class);
+    }
 }
