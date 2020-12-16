@@ -28,4 +28,8 @@ class Producto extends Model
     {
         return $this->hasMany('App\Models\TarjetaVideo');
     }
+    public function fotos()
+    {
+        return $this->hasMany(FotoProducto::class);
+    }
 }

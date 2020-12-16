@@ -16,15 +16,11 @@
                     </div>
 
                     <div class="imagenes_c">
+                    @foreach($almacenamiento->producto->fotos as $foto)
                         <div class="item" data-slide="0">
-                            <img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" width="85">
+                            <img src="{{ asset('../storage/fotos') }}/{!! $foto->ruta !!}" alt="#" width="85">
                         </div>
-                        <div class="item" data-slide="1">
-                            <img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" width="85">
-                        </div>
-                        <div class="item" data-slide="2">
-                            <img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" width="85">
-                        </div>
+                    @endforeach
                     </div>
 
                 </div>
