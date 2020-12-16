@@ -14,8 +14,12 @@ class RamController extends Controller
      */
     public function index()
     {
+        /*
         $rams = Ram::all();
         return view('ram.index')->with('rams',$rams);
+        */
+        $rams = Ram::where('status',1)->get();
+        return view('Ram.vercomponentes')->with('rams',$rams);
     }
 
     /**
@@ -48,7 +52,8 @@ class RamController extends Controller
      */
     public function show($id)
     {
-        //
+        $ram = Ram::find($id);
+        return view('Ram.articulo')->with('ram',$ram);
     }
 
     /**

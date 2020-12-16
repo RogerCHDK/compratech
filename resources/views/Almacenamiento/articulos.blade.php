@@ -5,9 +5,9 @@
    @foreach($almacenamientos as $almacenamiento)
       <div class="col-md-4 margin_bottom1">
          <div class="product_box">
-            <a href="articulo"><figure><img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" /></figure></a>
-            <a href="articulo"> <p class="articulo">{!! $almacenamiento->productos->nombre !!}</p> </a>
-            <p class="precio">$ {!! $almacenamiento->productos->precio !!}</p>
+            <a href="{!! 'almacenamientos/'.$almacenamiento->id !!}"><figure><img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" /></figure></a>
+            <a href="{!! 'almacenamientos/'.$almacenamiento->id !!}"> <p class="articulo">{!! $almacenamiento->producto->nombre !!}</p> </a>
+            <p class="precio">$ {!! $almacenamiento->producto->precio !!}</p>
             <h4><i class="fa fa-shopping-cart">&nbsp;&nbsp;</i> Agregar</h4>
          </div>
       </div>

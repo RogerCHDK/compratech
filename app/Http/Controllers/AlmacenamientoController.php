@@ -50,7 +50,8 @@ class AlmacenamientoController extends Controller
      */
     public function show($id)
     {
-        //
+        $almacenamiento = Almacenamiento::find($id);
+        return view('Almacenamiento.articulo')->with('almacenamiento',$almacenamiento);
     }
 
     /**

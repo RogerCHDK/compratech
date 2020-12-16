@@ -13,7 +13,10 @@ class GabinetesController extends Controller
      */
     public function index()
     {
-        //
+        $gabinetes = Gabinete::where('status',1)->get();
+        //$fotos = FotoProducto::where('status',1)->get();
+        //return view('Almacenamiento.vercomponentes')->with('almacenamientos',$almacenamientos)->with('fotos',$fotos);
+        return view('Gabinete.vercomponentes')->with('gabinetes',$gabinetes);
     }
 
     /**
@@ -45,7 +48,8 @@ class GabinetesController extends Controller
      */
     public function show($id)
     {
-        //
+        $gabinete = Gabinete::find($id);
+        return view('Gabinete.articulo')->with('gabinete',$gabinete);
     }
 
     /**

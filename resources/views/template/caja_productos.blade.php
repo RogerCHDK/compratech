@@ -64,7 +64,7 @@
                   </div>
                   <div class="col-md-4 margin_bottom1">
                      <div class="product_box">
-                        <a href="vercomponentes">
+                        <a href="almacenamientos">
                            <figure><img src="{!! asset('estilo/images/almacen.jpg') !!}" alt="#" /></figure>
                         </a>
                         <a class="nav-link" href="almacenamientos">
@@ -74,10 +74,10 @@
                   </div>
                   <div class="col-md-4">
                      <div class="product_box">
-                        <a href="vercomponentes">
+                        <a href="rams">
                            <figure><img src="{!! asset('estilo/images/memram.jpg') !!}" alt="#" /></figure>
                         </a>
-                        <a class="nav-link" href="vercomponentes">
+                        <a class="nav-link" href="rams">
                            <h3>Memoria RAM</h3>
                         </a>
                      </div>
@@ -94,10 +94,10 @@
                   </div>
                   <div class="col-md-4">
                      <div class="product_box">
-                        <a href="vercomponentes">
+                        <a href="gabinetes">
                            <figure><img src="{!! asset('estilo/images/gabo.png') !!}" alt="#" /></figure>
                         </a>
-                        <a class="nav-link" href="vercomponentes">
+                        <a class="nav-link" href="gabinetes">
                            <h3>Gabinetes</h3>
                         </a>
                      </div>

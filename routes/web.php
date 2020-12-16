@@ -69,3 +69,9 @@ Route::get('carrito_compras', function () {
 //Almacenamiento
 Route::resource('almacenamientos','AlmacenamientoController');
 
+//Gabinetes
+Route::resource('gabinetes','GabinetesController');
+
+//Ram
+Route::resource('rams','RamController');
+
