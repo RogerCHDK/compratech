@@ -75,3 +75,7 @@ Route::resource('gabinetes','GabinetesController');
 //Ram
 Route::resource('rams','RamController');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

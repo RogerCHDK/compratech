@@ -12,7 +12,7 @@
             <div class="centro">
                 <div class="product_images">
                     <div class="product_box">
-                        <figure><img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#"></figure>
+                        <figure><img src="{{ asset('../storage/fotos') }}/{!! $gabinete->producto->fotos->first()->ruta !!}" alt="#"></figure>
                     </div>
 
                     <div class="imagenes_c">
