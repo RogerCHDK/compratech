@@ -21,13 +21,13 @@
                 <a class="nav-link" href="#">Accesorios</a>
             </li>
             <li class="nav-tabs">
-                <a class="nav-link" href="#">Tarjetas de Video</a>
+                <a class="nav-link" href="{{ route('tarjeta_video.index') }}">Tarjetas de Video</a>
             </li>
             <li class="nav-tabs">
-                <a class="nav-link" href="#">Procesadores</a>
+                <a class="nav-link" href="{{ route('procesadores.index') }}">Procesadores</a>
             </li>
             <li class="nav-tabs">
-                <a class="nav-link" href="#">Motherboards</a>
+                <a class="nav-link" href="{{ route('tarjeta_madre.index') }}">Motherboards</a>
             </li>
             <li class="nav-tabs">
                 <a class="nav-link" href="#">Almacenamiento</a>
@@ -36,7 +36,7 @@
                 <a class="nav-link" href="#">Memorias RAM</a>
             </li>
             <li class="nav-tabs">
-                <a class="nav-link" href="#">Fuentes de Poder</a>
+                <a class="nav-link" href="{{ route('fuente_poder.index') }}">Fuentes de Poder</a>
             </li>
             <li class="nav-tabs">
                 <a class="nav-link" href="#">Gabinetes</a>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\TarjetaMadre;
 
 class TarjertaMadreController extends Controller
 {
@@ -13,7 +14,8 @@ class TarjertaMadreController extends Controller
      */
     public function index()
     {
-        //
+        $tarjetas = TarjetaMadre::where('status',1)->get();
+        return view('tarjeta_madre.index')->with('tarjetas',$tarjetas);
     }
 
     /**
@@ -45,7 +47,8 @@ class TarjertaMadreController extends Controller
      */
     public function show($id)
     {
-        //
+        $tarjetas = TarjetaMadre::findOrFail($id);
+        return view('tarjeta_madre.show')->with('tarjeta',$tarjetas);
     }
 
     /**

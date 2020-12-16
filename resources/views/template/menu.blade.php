@@ -20,7 +20,7 @@
                   <div class="collapse navbar-collapse" id="navbarsExample04">
                      <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                           <a class="nav-link" href="bienvenida">Inicio</a>
+                           <a class="nav-link" href="{{ route('bienvenida') }}">Inicio</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="acercade">Acerca</a>

@@ -6,10 +6,10 @@
       <div class="row">
          <div class="col-md-12">
             <div class="titlepage">
-               <h2>Componentes</h2>
+               <h2>Fuentes de Poder</h2>
             </div>
          </div>
-      </div>
+      </div> 
 
       <div class="row" style="margin-top: -100px;">
 
@@ -18,7 +18,7 @@
          </div>
 
          <div class="column right"> 
-            @include('articulos\articulos')
+            @include('fuente_poder\articulos')
             <div class="text-center">
                <div class="btn-group">
                   <a class="btn btn-default" href="#">Anterior</a>

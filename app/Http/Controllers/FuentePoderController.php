@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\FuentePoder;
 
 class FuentePoderController extends Controller
 {
@@ -13,7 +14,8 @@ class FuentePoderController extends Controller
      */
     public function index()
     {
-        //
+        $fuentes_poder = FuentePoder::where('status',1)->get();
+        return view('fuente_poder.index')->with('fuentes',$fuentes_poder);
     }
 
     /**
@@ -45,7 +47,8 @@ class FuentePoderController extends Controller
      */
     public function show($id)
     {
-        //
+        $fuentes_poder = FuentePoder::findOrFail($id);
+        return view('fuente_poder.show')->with('fuentes',$fuentes_poder);
     }
 
     /**

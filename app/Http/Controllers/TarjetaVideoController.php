@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\TarjetaVideo;
 
 class TarjetaVideoController extends Controller
 {
@@ -13,7 +14,8 @@ class TarjetaVideoController extends Controller
      */
     public function index()
     {
-        //
+        $tarjetas = TarjetaVideo::where('status',1)->get();
+        return view('tarjeta_video.index')->with('tarjetas',$tarjetas);
     }
 
     /**
@@ -45,7 +47,8 @@ class TarjetaVideoController extends Controller
      */
     public function show($id)
     {
-        //
+        $tarjetas = TarjetaVideo::findOrFail($id);
+        return view('tarjeta_video.show')->with('tarjeta',$tarjetas);
     }
 
     /**

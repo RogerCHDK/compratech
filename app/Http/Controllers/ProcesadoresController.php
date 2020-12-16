@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Procesador;
 
 class ProcesadoresController extends Controller
 {
@@ -13,7 +14,8 @@ class ProcesadoresController extends Controller
      */
     public function index()
     {
-        //
+        $procesadores = Procesador::where('status',1)->get();
+        return view('procesador.index')->with('procesadores',$procesadores);
     }
 
     /**
@@ -34,7 +36,7 @@ class ProcesadoresController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 
     }
 
     /**
@@ -45,7 +47,8 @@ class ProcesadoresController extends Controller
      */
     public function show($id)
     {
-        //
+        $procesadores = Procesador::findOrFail($id);
+        return view('procesador.show')->with('procesador',$procesadores);
     }
 
     /**

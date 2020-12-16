@@ -24,11 +24,12 @@ Route::resource('computadoras','ComputadorasController');
 Route::resource('fuente_poder','FuentePoderController');
 Route::resource('gabinetes','GabinetesController');
 Route::resource('procesadores','ProcesadoresController');
-Route::resource('tarjeta_madre','TarjetaMadreController');
+Route::resource('tarjeta_madre','TarjertaMadreController');
 Route::resource('tarjeta_video','TarjetaVideoController');
+
 Route::get('bienvenida', function () {
     return view('bienvenida');
-});
+})->name('bienvenida');
 
 Route::get('accesorios', function () {
     return view('accesorios');
@@ -55,7 +56,7 @@ Route::get('iniciarsesion', function () {
 });
 
 Route::get('vercomponentes', function () {
-    return view('articulos.vercomponentes');
+    return view('articulos.vercomponentes'); 
 });
 
 Route::get('articulo', function () {
