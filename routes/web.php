@@ -66,3 +66,6 @@ Route::get('carrito_compras', function () {
     return view('carrito_compras');
 });
 
+//Almacenamiento
+Route::resource('almacenamientos','AlmacenamientoController');
+

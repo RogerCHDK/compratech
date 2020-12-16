@@ -67,7 +67,7 @@
                         <a href="vercomponentes">
                            <figure><img src="{!! asset('estilo/images/almacen.jpg') !!}" alt="#" /></figure>
                         </a>
-                        <a class="nav-link" href="vercomponentes">
+                        <a class="nav-link" href="almacenamientos">
                            <h3>Almacenamiento</h3>
                         </a>
                      </div>

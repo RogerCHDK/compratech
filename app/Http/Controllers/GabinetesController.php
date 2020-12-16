@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Gabinete;
 use Illuminate\Http\Request;
 
 class GabinetesController extends Controller

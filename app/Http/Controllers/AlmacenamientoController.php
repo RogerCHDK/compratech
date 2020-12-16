@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Almacenamiento;
+use App\Models\FotoProducto;
 
 class AlmacenamientoController extends Controller
 {
@@ -13,7 +15,10 @@ class AlmacenamientoController extends Controller
      */
     public function index()
     {
-        //
+        $almacenamientos = Almacenamiento::where('status',1)->get();
+        //$fotos = FotoProducto::where('status',1)->get();
+        //return view('Almacenamiento.vercomponentes')->with('almacenamientos',$almacenamientos)->with('fotos',$fotos);
+        return view('Almacenamiento.vercomponentes')->with('almacenamientos',$almacenamientos);
     }
 
     /**
