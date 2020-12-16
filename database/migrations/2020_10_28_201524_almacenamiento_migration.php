@@ -17,8 +17,7 @@ class AlmacenamientoMigration extends Migration
             $table->id();
             $table->string('interface');
              $table->integer('capacidad');
-             $table->integer('velocidad_lectura');
-             $table->integer('velocidad_escritura');
+             $table->integer('velocidad_rotacion');
              $table->string('tipo_almacenamiento');
              $table->integer('status');
             $table->foreignId('producto_id')->constrained();

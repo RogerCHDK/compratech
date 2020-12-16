@@ -10,7 +10,7 @@
                <li data-target="#banner1" data-slide-to="3"></li>
                <li data-target="#banner1" data-slide-to="4"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner"> 
                <div class="carousel-item active">
                   <div class="container">
                      <div class="carousel-caption">
@@ -157,7 +157,7 @@
       <!-- three_box -->
       <!-- products -->
         <div class="contenedor">
-         @include('template\caja_productos')
+         @include('template\caja_productos') 
         </div>
       <!-- end products -->
       <!-- laptop  section -->

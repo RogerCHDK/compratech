@@ -17,8 +17,8 @@
             @include('articulos\menu_lateral')
          </div>
 
-         <div class="column right"> 
-            @include('articulos\articulos')
+         <div class="column right">
+            @include('Almacenamiento\articulos')
             <div class="text-center">
                <div class="btn-group">
                   <a class="btn btn-default" href="#">Anterior</a>
@@ -29,6 +29,7 @@
                </div>
             </div>
          </div>
+
       </div>
    </div>
 </div>

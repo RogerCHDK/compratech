@@ -17,9 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('productos','ProductosController'); 
+Route::resource('computadoras','ComputadorasController');
+Route::resource('fuente_poder','FuentePoderController');
+Route::resource('procesadores','ProcesadoresController');
+Route::resource('tarjeta_madre','TarjertaMadreController');
+Route::resource('tarjeta_video','TarjetaVideoController');
+
 Route::get('bienvenida', function () {
     return view('bienvenida');
-});
+})->name('bienvenida');
 
 Route::get('accesorios', function () {
     return view('accesorios');
@@ -46,7 +53,7 @@ Route::get('iniciarsesion', function () {
 });
 
 Route::get('vercomponentes', function () {
-    return view('articulos.vercomponentes');
+    return view('articulos.vercomponentes'); 
 });
 
 Route::get('articulo', function () {
@@ -68,3 +75,12 @@ Route::get('continuar_compra1', function () {
 Route::get('continuar_compra2', function () {
     return view('compra.continuar_compra2');
 });
+//Almacenamiento
+Route::resource('almacenamientos','AlmacenamientoController');
+
+//Gabinetes
+Route::resource('gabinetes','GabinetesController');
+
+//Ram
+Route::resource('rams','RamController');
+
