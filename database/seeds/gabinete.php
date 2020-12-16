@@ -11,7 +11,7 @@ class gabinete extends Seeder
      */
     public function run()
     {
-        DB::table('ram')->insert([ 
+        DB::table('gabinetes')->insert([ 
             'factor_forma' => 'Midi-Tower',
             'puertos_usb' => '2',
             'tarjeta_madre_soportada' => 'ATX,Micro ATX,Mini-ITX',
@@ -19,7 +19,7 @@ class gabinete extends Seeder
             'status' => '1',
         ]);
 
-        DB::table('ram')->insert([ 
+        DB::table('gabinetes')->insert([ 
             'factor_forma' => 'Torre',
             'puertos_usb' => '2',
             'tarjeta_madre_soportada' => 'Micro ATX,Mini-ITX',
@@ -27,7 +27,7 @@ class gabinete extends Seeder
             'status' => '1',
         ]);
 
-        DB::table('ram')->insert([ 
+        DB::table('gabinetes')->insert([ 
             'factor_forma' => 'Midi-Tower',
             'puertos_usb' => '2',
             'tarjeta_madre_soportada' => 'ATX,EATX,Micro ATX,Mini-ITX',
@@ -35,7 +35,7 @@ class gabinete extends Seeder
             'status' => '1',
         ]);
 
-        DB::table('ram')->insert([ 
+        DB::table('gabinetes')->insert([ 
             'factor_forma' => 'Midi-Tower',
             'puertos_usb' => '2',
             'tarjeta_madre_soportada' => 'ATX,Micro ATX,Mini-ITX',
@@ -43,7 +43,7 @@ class gabinete extends Seeder
             'status' => '1',
         ]);
 
-        DB::table('ram')->insert([ 
+        DB::table('gabinetes')->insert([ 
             'factor_forma' => 'Midi-Tower',
             'puertos_usb' => '2',
             'tarjeta_madre_soportada' => 'ATX',
@@ -51,7 +51,7 @@ class gabinete extends Seeder
             'status' => '1',
         ]);
 
-        DB::table('ram')->insert([ 
+        DB::table('gabinetes')->insert([ 
             'factor_forma' => 'Midi-Tower',
             'puertos_usb' => '2',
             'tarjeta_madre_soportada' => 'Micro ATX,Mini-ITX',
@@ -59,7 +59,7 @@ class gabinete extends Seeder
             'status' => '1',
         ]);
 
-        DB::table('ram')->insert([ 
+        DB::table('gabinetes')->insert([ 
             'factor_forma' => 'Midi-Tower',
             'puertos_usb' => '5',
             'tarjeta_madre_soportada' => 'ATX,EATX,Micro ATX,Mini-ATX',
@@ -67,7 +67,7 @@ class gabinete extends Seeder
             'status' => '1',
         ]);
 
-        DB::table('ram')->insert([ 
+        DB::table('gabinetes')->insert([ 
             'factor_forma' => 'Midi-Tower',
             'puertos_usb' => '2',
             'tarjeta_madre_soportada' => 'ATX,Micro ATX,Mini-ITX',
@@ -75,7 +75,7 @@ class gabinete extends Seeder
             'status' => '1',
         ]);
 
-        DB::table('ram')->insert([ 
+        DB::table('gabinetes')->insert([ 
             'factor_forma' => 'Torre',
             'puertos_usb' => '2',
             'tarjeta_madre_soportada' => 'Micro ATX,Mini-ITX',
@@ -83,7 +83,7 @@ class gabinete extends Seeder
             'status' => '1',
         ]);
 
-        DB::table('ram')->insert([ 
+        DB::table('gabinetes')->insert([ 
             'factor_forma' => 'Torre',
             'puertos_usb' => '2',
             'tarjeta_madre_soportada' => 'Micro ATX,Mini-ITX',

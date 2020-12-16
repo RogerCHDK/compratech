@@ -30,16 +30,16 @@
                 <a class="nav-link" href="{{ route('tarjeta_madre.index') }}">Motherboards</a>
             </li>
             <li class="nav-tabs">
-                <a class="nav-link" href="#">Almacenamiento</a>
+                <a class="nav-link" href="almacenamientos">Almacenamiento</a>
             </li>
             <li class="nav-tabs">
-                <a class="nav-link" href="#">Memorias RAM</a>
+                <a class="nav-link" href="rams">Memorias RAM</a>
             </li>
             <li class="nav-tabs">
                 <a class="nav-link" href="{{ route('fuente_poder.index') }}">Fuentes de Poder</a>
             </li>
             <li class="nav-tabs">
-                <a class="nav-link" href="#">Gabinetes</a>
+                <a class="nav-link" href="gabinetes">Gabinetes</a>
             </li>
         </ul>
     </div>
