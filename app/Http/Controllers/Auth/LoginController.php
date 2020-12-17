@@ -5,6 +5,16 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+///////Código
+use App\Models\Municipio;
+use App\Models\User;
+use Validator;
+use Illuminate\Contracts\Auth\Guard;
+use Illuminate\Http\Request;
+use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Session;
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -26,7 +36,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/login';
 
     /**
      * Create a new controller instance.
@@ -40,7 +50,7 @@ class LoginController extends Controller
     }
 
     public function getlogin(){
-        return view("login");
+        return view("iniciarsesion");
 
     }
 
@@ -57,7 +67,7 @@ class LoginController extends Controller
             $usuarioactual = \Auth::user();
             $user =$usuarioactual;
             //return redirect()->route('users.show',$usuarioactual->id)->with('user',$user);
-            return view('inicio')->with("user", $user);
+            return view('bienvenida')->with("user", $user);
         }
         
         return view('mensaje.error_login');
@@ -69,5 +79,9 @@ class LoginController extends Controller
         return redirect("login");
     }
     
+    public function combo_municipios_x_entidad($estado_id){
+        $municipios = Municipio::select('id','nombre')->where('estado_id',$estado_id)->where('status',1)->get();
+        return $municipios;
+    }
     
 }

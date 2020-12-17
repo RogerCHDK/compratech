@@ -19,27 +19,48 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarsExample04">
                      <ul class="navbar-nav mr-auto">
+                        @auth
                         <li class="nav-item active">
-                           <a class="nav-link" href="bienvenida">Inicio</a>
+                           <a class="nav-link" href="{!! asset('bienvenida') !!}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="acercade">Acerca</a>
+                           <a class="nav-link" href="{!! asset('acercade') !!}">Acerca</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="presupuestos">Presupuestos</a>
+                           <a class="nav-link" href="{!! asset('presupuestos') !!}">Presupuestos</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="productos">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="registro">Regístrate</a>
+                           <a class="nav-link" href="{!! asset('productos') !!}">Productos</a>
                         </li>
                         <li class="nav-item d_none">
-                           <a class="nav-link" href="carrito_compras"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                           <a class="nav-link" href="{!! asset('carrito_compras') !!}"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                         </li>
                         <li class="nav-item d_none">
-                           <a class="nav-link" href="iniciarsesion">Iniciar Sesión</a>
+                           <a class="nav-link" href="{!! asset('logout') !!}">Cerrar Sesión</a>
                         </li>
+                        @else
+                        <li class="nav-item active">
+                           <a class="nav-link" href="{!! asset('bienvenida') !!}">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="{!! asset('acercade') !!}">Acerca</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="{!! asset('presupuestos') !!}">Presupuestos</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="{!! asset('productos') !!}">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="{!! asset('register') !!}">Regístrate</a>
+                        </li>
+                        <li class="nav-item d_none">
+                           <a class="nav-link" href="{!! asset('carrito_compras') !!}"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item d_none">
+                           <a class="nav-link" href="{!! asset('login') !!}">Iniciar Sesión</a>
+                        </li>
+                        @endauth
                      </ul>
                   </div>
                </nav>

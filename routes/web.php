@@ -79,3 +79,12 @@ Route::resource('rams','RamController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//login, register, logout
+Route::get('login','Auth\LoginController@getLogin');
+Route::post('login_post','Auth\LoginController@postLogin')->name("login_post");
+Route::get('register', 'Auth\RegisterController@getRegister');
+Route::post('register_post', 'Auth\RegisterController@postRegister')->name("register_post");
+
+Route::get('combo_municipios_x_entidad/{entidad_id}','Auth\LoginController@combo_municipios_x_entidad');
+Route::get('logout','Auth\LoginController@getLogout');

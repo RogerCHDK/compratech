@@ -12,16 +12,17 @@
         </div>
         <div class="row">
             <div class="col-md-10 offset-md-1">
-                <form id="request" class="main_form">
+                <form id="request" class="main_form" action="{{route('login_post')}}" method="POST" >
+                @csrf
                     <div class="row">
-                        <div class="col-md-12">
-                            <input class="contactus" placeholder="Correo electronico" type="email" name="Email">
+                    <div class="col-md-12">
+                            <input id="email" class="contactus" placeholder="Correo" type="email" name="email">
                         </div>
                         <div class="col-md-12">
-                            <input class="contactus" placeholder="Contraseña" type="password" name="Password">
+                        <input id="password" class="contactus" placeholder="Contraseña" type="text" name="password">
                         </div>
                         <div class="col-md-12">
-                            <button class="send_btn">Continuar</button>
+                            <button class="send_btn" type="submit">Continuar</button>
                         </div>
                     </div>
                 </form>
