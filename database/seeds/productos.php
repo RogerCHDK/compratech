@@ -222,7 +222,7 @@ class productos extends Seeder
             'stock' => '99',
             'categoria_id' => '4',
             'status' => '1',
-        ]); 
+        ]);  
 
         DB::table('productos')->insert([ 
             'marca' => 'ASUS',
@@ -304,7 +304,7 @@ class productos extends Seeder
             'status' => '1',
         ]); 
 
-        DB::table('productos')->insert([ 
+        DB::table('productos')->insert([  
             'marca' => 'ASUS',
             'nombre' => 'Prime B365M-A',
             'precio' => '1969.00',

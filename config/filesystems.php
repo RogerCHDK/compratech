@@ -65,6 +65,31 @@ return [
             'endpoint' => env('AWS_ENDPOINT'),
         ],
 
+        'fuente_poder' => [
+            'driver' => 'local',
+            'root' => storage_path('app/fuente_poder'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
+        'procesador' => [
+            'driver' => 'local',
+            'root' => storage_path('app/procesador'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
+        'tarjeta_madre' => [
+            'driver' => 'local',
+            'root' => storage_path('app/tarjeta_madre'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
+        'tarjeta_video' => [
+            'driver' => 'local',
+            'root' => storage_path('app/tarjeta_video'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
+
     ],
 
     /*

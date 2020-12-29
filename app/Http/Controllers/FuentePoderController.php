@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\FuentePoder;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\Response; 
 
 class FuentePoderController extends Controller
 {
@@ -84,4 +86,10 @@ class FuentePoderController extends Controller
     {
         //
     }
+
+    public function getImage($fileName)
+    {
+        $file = Storage::disk('fuente_poder')->get($fileName);
+        return $file;
+    } 
 }

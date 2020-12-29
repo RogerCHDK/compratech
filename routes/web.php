@@ -77,3 +77,9 @@ Route::resource('rams','RamController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//fotos
+Route::get('fuente-imagen/{filename}', 'FuentePoderController@getImage')->name('fuente.imagen');
+Route::get('procesador-imagen/{filename}', 'ProcesadoresController@getImage')->name('procesador.imagen');
+Route::get('tarjet-madre-imagen/{filename}', 'TarjertaMadreController@getImage')->name('madre.imagen');
+Route::get('tarjeta-video-imagen/{filename}', 'TarjetaVideoController@getImage')->name('video.imagen');

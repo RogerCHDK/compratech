@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TarjetaMadre;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\Response; 
 
 class TarjertaMadreController extends Controller
 {
@@ -84,4 +86,10 @@ class TarjertaMadreController extends Controller
     {
         //
     }
+
+    public function getImage($fileName)
+    {
+        $file = Storage::disk('tarjeta_madre')->get($fileName);
+        return $file;
+    } 
 }

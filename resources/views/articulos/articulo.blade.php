@@ -3,7 +3,7 @@
 <!-- about section -->
 <!-- products -->
 <div class="products">
-    <div class="contenedor_d">
+    <div class="contenedor_d"> 
         <div class="columnas">
             <div class="izquierda">
                  @include('articulos\menu_lateral')
