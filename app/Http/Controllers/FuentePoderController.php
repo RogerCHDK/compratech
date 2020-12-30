@@ -92,4 +92,10 @@ class FuentePoderController extends Controller
         $file = Storage::disk('fuente_poder')->get($fileName);
         return $file;
     } 
+
+    public function showFiltro($id)
+    {
+        $fuentes_poder = FuentePoder::where('producto_id',$id)->get();
+        return view('fuente_poder.show')->with('fuentes',$fuentes_poder[0]);
+    }
 }

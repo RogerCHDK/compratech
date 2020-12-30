@@ -40,13 +40,15 @@
                             <li>Descripción: {!! $almacenamiento->producto->descripcion !!}</li>
                         </ul>
                     </div>
+                    <form action="{{ route('agregar.carro',$almacenamiento->producto_id) }}" method="GET">  
                     <div class="precio-container">
-                        <h3 class="precio">$ {!! $almacenamiento->producto->precio !!}</h3>
+                        <h3 class="precio">${{$almacenamiento->producto->precio}}</h3>
                         <button class="btn btn-primary">
                             <i class="fa fa-shopping-cart"></i>
                             Agregar al carrito
                         </button>
                     </div>
+                    </form>
                     <p>Las existencias pueden variar sin previo aviso</p>
                 </div>
             </div>

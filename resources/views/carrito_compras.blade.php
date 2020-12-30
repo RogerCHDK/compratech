@@ -10,8 +10,10 @@
                     <h2>Tu carrito de Compras</h2>
                 </div>
             </div>
-        </div>
-
+        </div> 
+        <?php $valor = 0.0 ?>
+        <?php $aux = "" ?>
+        @if(session('cart'))
         <div class="card">
             <div class="card-body">
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
@@ -21,31 +23,61 @@
                             <th>Producto</th>
                             <th>Descripción</th>
                             <th>Precio</th>
-                            <th>Eliminar</th>
+                            <th>Cantidad</th>
                         </tr>
                     </thead>
                     <tbody>
+                        
+                        @foreach(session('cart') as $id => $detalle)
                         <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>61</td>
-                        </tr>
-                        <tr>
-                            <td>Garrett Winters</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>63</td>
-                            <td>61</td>
-                        </tr>
+                        <?php $valor += $detalle['precio'] * $detalle['cantidad'] ?>
+                        
+                        @if($detalle['categoria'] == 'tarjeta de video')
+                        <td><img src="{{route('video.imagen',$detalle['foto'])}}" alt="#"  width="85"/></td>
+                        <td><a href="{{route('filtro.video',$detalle['id']) }}">{{$detalle['nombre']}}</a></td>
+                        @elseif ($detalle['categoria'] == 'procesador')
+                        <td><img src="{{route('procesador.imagen',$detalle['foto'])}}" alt="#"  width="85"/></td>
+                        <td><a href="{{route('filtro.procesador',$detalle['id']) }}">{{$detalle['nombre']}}</a></td>
+                        @elseif ($detalle['categoria'] == 'tarjeta madre')
+                        <td><img src="{{route('madre.imagen',$detalle['foto'])}}" alt="#"  width="85"/></td>
+                        <td><a href="{{route('filtro.madre',$detalle['id']) }}">{{$detalle['nombre']}}</a></td>
+                        @elseif ($detalle['categoria'] == 'almacenamiento')
+                        <td><img src="{{ asset('../storage/fotos') }}/{{$detalle['foto']}}" alt="#"  width="85"/></td>
+                        <td><a href="{{route('filtro.almacenamiento',$detalle['id']) }}">{{$detalle['nombre']}}</a></td>
+                        @elseif ($detalle['categoria'] == 'ram')
+                        <td><img src="{{ asset('../storage/fotos') }}/{{$detalle['foto']}}" alt="#"  width="85"/></td>
+                        <td><a href="{{route('filtro.ram',$detalle['id']) }}">{{$detalle['nombre']}}</a></td>
+                        @elseif ($detalle['categoria'] == 'fuente de poder')
+                        <td><img src="{{route('fuente.imagen',$detalle['foto'])}}" alt="#"  width="85"/></td>
+                        <td><a href="{{route('filtro.fuente',$detalle['id']) }}">{{$detalle['nombre']}}</a></td>
+                        @elseif ($detalle['categoria'] == 'gabinete')
+                        <td><img src="{{ asset('../storage/fotos') }}/{{$detalle['foto']}}" alt="#"  width="85"/></td>
+                        <td><a href="{{route('filtro.gabinete',$detalle['id']) }}">{{$detalle['nombre']}}</a></td>
+                        @endif 
+                        
+                            <td>{{$detalle['descripcion']}}</td>
+                            <td>{{$detalle['precio']}}</td>
+                            <td>{{$detalle['cantidad']}}</td> 
+                            </tr>
+                            @endforeach
+                        
                     </tbody>
                 </table>
 
+                <table align="right">
+                <th>
+                    <div class="badge badge-primary text-wrap" style="width: 10rem;">
+                    <p>Valor: ${{$valor}}</p>
+                    <p>Costo envio: $99.0</p>
+                    <p>Total: ${{$valor + 99}}</p>
+                    </div>
+                </th>
+             </table>
+
             </div>
         </div>
-
-        <button type="button">Vaciar Carrito</button>
+        <h4><i class="fa fa-shopping-cart">&nbsp;&nbsp;</i><a href="{{ route('limpiar.carro') }}"> Limpiar carro</a></h4>
+        @endif
 
     </div>
 </div>

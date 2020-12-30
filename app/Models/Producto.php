@@ -32,4 +32,9 @@ class Producto extends Model
     {
         return $this->hasMany(FotoProducto::class);
     }
+
+    public function categoria() 
+       { 
+           return $this->belongsTo('App\Models\Categoria');
+       }
 }

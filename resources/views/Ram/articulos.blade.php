@@ -8,7 +8,7 @@
             <a href="{!! 'rams/'.$ram->id !!}"><figure><img src="{{ asset('../storage/fotos') }}/{!! $ram->producto->fotos->first()->ruta !!}" alt="#" /></figure></a>
             <a href="{!! 'rams/'.$ram->id !!}"> <p class="articulo">{!! $ram->producto->nombre !!}</p> </a>
             <p class="precio">$ {!! $ram->producto->precio !!}</p>
-            <h4><i class="fa fa-shopping-cart">&nbsp;&nbsp;</i> Agregar</h4>
+            <a href="{{ route('agregar.carro',$ram->producto_id) }}"> <h4><i class="fa fa-shopping-cart">&nbsp;&nbsp;</i>Agregar</h4></a>
          </div>
       </div>
    @endforeach

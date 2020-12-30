@@ -92,4 +92,13 @@ class ProcesadoresController extends Controller
         $file = Storage::disk('procesador')->get($fileName);
         return $file; 
     } 
+
+    public function showFiltro($id)
+    {
+        $procesadores = Procesador::where('producto_id',$id)->get();
+        
+        return view('procesador.show')->with('procesador',$procesadores[0]);
+        
+        
+    }
 }

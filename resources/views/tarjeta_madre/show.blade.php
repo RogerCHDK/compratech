@@ -41,6 +41,7 @@
                             <li>Tipo de memoria:  {{$tarjeta->tipo_memoria}}</li>
                         </ul>
                     </div>
+                    <form action="{{ route('agregar.carro',$tarjeta->producto_id) }}" method="GET">  
                     <div class="precio-container">
                         <h3 class="precio">${{$tarjeta->producto->precio}}</h3>
                         <button class="btn btn-primary">
@@ -48,6 +49,7 @@
                             Agregar al carrito
                         </button>
                     </div>
+                    </form>
                     <p>Las existencias pueden variar sin previo aviso</p>
                 </div>
             </div>

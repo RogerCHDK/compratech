@@ -92,4 +92,14 @@ class TarjetaVideoController extends Controller
         $file = Storage::disk('tarjeta_video')->get($fileName);
         return $file;
     } 
+
+    public function showFiltro($id)
+    {
+        $tarjetas = TarjetaVideo::where('producto_id',$id)->get();
+        
+            return view('tarjeta_video.show')->with('tarjeta',$tarjetas[0]);
+        
+        
+    }
+
 }

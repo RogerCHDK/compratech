@@ -85,4 +85,10 @@ class GabinetesController extends Controller
     {
         //
     }
+
+    public function showFiltro($id)
+    {
+        $gabinete = Gabinete::where('producto_id',$id)->get();
+        return view('Gabinete.articulo')->with('gabinete',$gabinete[0]);
+    }
 }

@@ -90,4 +90,16 @@ Route::get('register', 'Auth\RegisterController@getRegister');
 Route::post('register_post', 'Auth\RegisterController@postRegister')->name("register_post");
 
 Route::get('combo_municipios_x_entidad/{entidad_id}','Auth\LoginController@combo_municipios_x_entidad');
-Route::get('logout','Auth\LoginController@getLogout');
+Route::get('logout','Auth\LoginController@getLogout'); 
+
+//Carrito
+Route::get('cart','ProductosController@cart')->name('carro');
+Route::get('add-to-cart/{id}','ProductosController@addToCart')->name('agregar.carro');
+Route::get('delete-cart','ProductosController@limpiarCarro')->name('limpiar.carro');
+Route::get('filtro-video/{id}','TarjetaVideoController@showFiltro')->name('filtro.video');
+Route::get('filtro-procesador/{id}','ProcesadoresController@showFiltro')->name('filtro.procesador');
+Route::get('filtro-madre/{id}','TarjertaMadreController@showFiltro')->name('filtro.madre');
+Route::get('filtro-almacenamiento/{id}','AlmacenamientoController@showFiltro')->name('filtro.almacenamiento');
+Route::get('filtro-ram/{id}','RamController@showFiltro')->name('filtro.ram');
+Route::get('filtro-fuente/{id}','FuentePoderController@showFiltro')->name('filtro.fuente');
+Route::get('filtro-gabinete/{id}','GabinetesController@showFiltro')->name('filtro.gabinete');

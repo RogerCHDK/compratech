@@ -92,4 +92,11 @@ class TarjertaMadreController extends Controller
         $file = Storage::disk('tarjeta_madre')->get($fileName);
         return $file;
     } 
+
+    public function showFiltro($id)
+    {
+        $tarjetas = TarjetaMadre::where('producto_id',$id)->get();
+        return view('tarjeta_madre.show')->with('tarjeta',$tarjetas[0]);
+        
+    }
 }

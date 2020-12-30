@@ -87,4 +87,10 @@ class AlmacenamientoController extends Controller
     {
         //
     }
+
+    public function showFiltro($id)
+    {
+        $almacenamiento = Almacenamiento::where('producto_id',$id)->get();
+        return view('Almacenamiento.articulo')->with('almacenamiento',$almacenamiento[0]);
+    }
 }
