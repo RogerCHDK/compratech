@@ -1259,7 +1259,6 @@ ul.social_icon li a:hover {
 .centro .product_box figure img {
      margin: auto;
      width: 460px;
-     height: 400px;
      border: 1px solid #48CA95;
 }
 
@@ -1385,4 +1384,18 @@ ul.social_icon li a:hover {
 
 .modal-dialog .modal-content .texto_modal{
      padding: 1em;
+}
+
+.datos_pago h4{
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 0px 0;
+}
+
+.laptop .laptop_box {
+     color: ivory;
+}
+
+.laptop .laptop_box .form-check{
+     color: ivory;
 }

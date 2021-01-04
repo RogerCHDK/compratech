@@ -12,9 +12,8 @@
                          <h5>Empezaremos a trabajar en tu pedido, puedes ver los datos de tu pedido en tus compras.</h5>
                     </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" id="actualizadatos" data-dismiss="modal">Ir a Compras</button>
+                    <a href="mis_compras" class="btn btn-success">Ir a Mis Compras</a>
                 </div>
-            
             </div>
         </div>
     </div>
@@ -53,20 +52,7 @@
                             <label><span class="hidden-xs">Fecha de Vencimiento</span> </label>
                             <div class="form-row col-md-12">
                                 <div class="col">
-                                    <select class="datos custom-select mr-sm-2" id="inlineFormCustomSelect" >
-                                        <option selected>AA</option>
-                                        <option value="1">20</option>
-                                        <option value="2">21</option>
-                                        <option value="4">22</option>
-                                        <option value="5">23</option>
-                                        <option value="6">24</option>
-                                        <option value="7">25</option>
-                                        <option value="8">26</option>
-                                    </select>
-                                    </input>
-                                </div>
-                                <div class="col">
-                                    <select class="datos custom-select mr-sm-2" id="inlineFormCustomSelect" >
+                                <select class="datos custom-select mr-sm-2" id="inlineFormCustomSelect" >
                                         <option selected>MM</option>
                                         <option value="1">01</option>
                                         <option value="2">02</option>
@@ -80,6 +66,19 @@
                                         <option value="10">10</option>
                                         <option value="11">11</option>
                                         <option value="12">12</option>
+                                    </select>
+                                    </input>
+                                </div>
+                                <div class="col">
+                                <select class="datos custom-select mr-sm-2" id="inlineFormCustomSelect" >
+                                        <option selected>AA</option>
+                                        <option value="1">20</option>
+                                        <option value="2">21</option>
+                                        <option value="4">22</option>
+                                        <option value="5">23</option>
+                                        <option value="6">24</option>
+                                        <option value="7">25</option>
+                                        <option value="8">26</option>
                                     </select>
                                     </input>
                                 </div>

@@ -1,26 +1,34 @@
 @extends('template.master')
 @section('contenido_central')
-<!-- about section -->
+<!-- modal -->
+<div class="modal fade" id="modal_img" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-em" role="document">
+        <div class="modal-content">
+            <img src="" alt="#" id="img01">
+        </div>
+    </div>
+</div>
+<!-- end modal -->
 <!-- products -->
 <div class="products">
     <div class="contenedor_d">
         <div class="columnas">
             <div class="izquierda">
-                 @include('articulos\menu_lateral')
+                @include('articulos\menu_lateral')
             </div>
 
             <div class="centro">
                 <div class="product_images">
                     <div class="product_box">
-                        <figure><img src="{{ asset('../storage/fotos') }}/{!! $gabinete->producto->fotos->first()->ruta !!}" alt="#"></figure>
+                        <figure><img id="myImg" src="{{ asset('../storage/fotos') }}/{!! $gabinete->producto->fotos->first()->ruta !!}" alt="#"></figure>
                     </div>
 
-                    <div class="imagenes_c">
-                    @foreach($gabinete->producto->fotos as $foto)
-                        <div class="item" data-slide="0">
-                            <img src="{{ asset('../storage/fotos') }}/{!! $foto->ruta !!}" alt="#" width="85">
+                    <div class="imagenes_c" id="imagenes">
+                        @foreach($gabinete->producto->fotos as $foto)
+                        <div class="item" id="items">
+                            <img id="myImg2" class="asdf" src="{{ asset('../storage/fotos') }}/{!! $foto->ruta !!}" alt="#" width="85">
                         </div>
-                    @endforeach
+                        @endforeach
                     </div>
 
                 </div>
@@ -38,7 +46,7 @@
                             <li>Tarjeta de madre soportada: {!! $gabinete->tarjeta_madre_soportada !!}</li>
                             <li>Descripción: {!! $gabinete->producto->descripcion !!}</li>
                         </ul>
-                        
+
                     </div>
                     <div class="precio-container">
                         <h3 class="precio">$ {!! $gabinete->producto->precio !!}</h3>
@@ -55,6 +63,25 @@
         </div>
     </div>
 </div>
+
+<script>
+    // Get the image and insert it inside the modal
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+
+    img.onclick = function() {
+        $("#modal_img").modal("show");
+        modalImg.src = this.src;
+    }
+
+    var img2 = document.getElementsByClassName("asdf");
+    for (var i = 0; i < img2.length; i++) {
+        img2[i].onclick = function() {
+            $("#modal_img").modal("show");
+            modalImg.src = this.src;
+        }
+    }
+</script>
 
 <!-- end about section -->
 @endsection()

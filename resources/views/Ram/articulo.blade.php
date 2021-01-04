@@ -1,6 +1,5 @@
 @extends('template.master')
 @section('contenido_central')
-<!-- about section -->
 <!-- products -->
 <div class="products">
     <div class="contenedor_d">
@@ -14,7 +13,6 @@
                     <div class="product_box">
                         <figure><img src="{{ asset('../storage/fotos') }}/{!! $ram->producto->fotos->first()->ruta !!}" alt="#"></figure>
                     </div>
-
                     <div class="imagenes_c">
                     @foreach($ram->producto->fotos as $foto)
                         <div class="item" data-slide="0">
@@ -22,7 +20,6 @@
                         </div>
                     @endforeach
                     </div>
-
                 </div>
             </div>
 
@@ -50,11 +47,12 @@
                     <p>Las existencias pueden variar sin previo aviso</p>
                 </div>
             </div>
-
-
         </div>
     </div>
 </div>
+
+
+
 
 <!-- end about section -->
 @endsection()

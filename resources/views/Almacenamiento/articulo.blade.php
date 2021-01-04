@@ -1,6 +1,14 @@
 @extends('template.master')
 @section('contenido_central')
-<!-- about section -->
+<!-- modal -->
+<div class="modal fade" id="modal_img" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-em" role="document">
+        <div class="modal-content">
+            <img src="" alt="#" id="img01">
+        </div>
+    </div>
+</div>
+<!-- end modal -->
 <!-- products -->
 <div class="products">
     <div class="contenedor_d">
@@ -12,13 +20,13 @@
             <div class="centro">
                 <div class="product_images">
                     <div class="product_box">
-                        <figure><img src="{{ asset('../storage/fotos') }}/{!! $almacenamiento->producto->fotos->first()->ruta !!}" alt="#"></figure>
+                        <figure><img id="myImg" src="{{ asset('../storage/fotos') }}/{!! $almacenamiento->producto->fotos->first()->ruta !!}" alt="#"></figure>
                     </div>
 
                     <div class="imagenes_c">
                     @foreach($almacenamiento->producto->fotos as $foto)
-                        <div class="item" data-slide="0">
-                            <img src="{{ asset('../storage/fotos') }}/{!! $foto->ruta !!}" alt="#" width="85">
+                        <div class="item" id="items" data-slide="0">
+                            <img id="myImg2" class="asdf" src="{{ asset('../storage/fotos') }}/{!! $foto->ruta !!}" alt="#" width="85">
                         </div>
                     @endforeach
                     </div>
@@ -55,6 +63,23 @@
         </div>
     </div>
 </div>
+<script>
+    // Get the image and insert it inside the modal
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
 
+    img.onclick = function() {
+        $("#modal_img").modal("show");
+        modalImg.src = this.src;
+    }
+
+    var img2 = document.getElementsByClassName("asdf");
+    for (var i = 0; i < img2.length; i++) {
+        img2[i].onclick = function() {
+            $("#modal_img").modal("show");
+            modalImg.src = this.src;
+        }
+    }
+</script>
 <!-- end about section -->
 @endsection()

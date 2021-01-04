@@ -75,6 +75,23 @@ Route::get('continuar_compra1', function () {
 Route::get('continuar_compra2', function () {
     return view('compra.continuar_compra2');
 });
+
+Route::get('mis_compras', function () {
+    return view('compra.mis_compras');
+});
+
+Route::get('presupuesto1', function () {
+    return view('presupuestos.presupuesto1');
+});
+
+Route::get('presupuesto2', function () {
+    return view('presupuestos.presupuesto2');
+});
+
+Route::get('presupuesto3', function () {
+    return view('presupuestos.presupuesto3');
+});
+
 //Almacenamiento
 Route::resource('almacenamientos','AlmacenamientoController');
 
