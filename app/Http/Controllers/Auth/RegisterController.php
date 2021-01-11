@@ -56,7 +56,7 @@ class RegisterController extends Controller
         $this->middleware('guest')->except('getLogout');
     }
 
-    public function getRegister(){
+    public function getRegister(){ 
         $estados = Estado::select('id','nombre')->orderBy('nombre')->get();
         return view("registro")->with('estados',$estados);
     }

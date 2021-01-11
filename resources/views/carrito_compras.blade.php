@@ -78,7 +78,7 @@
         </div>
         <h4><i class="fa fa-shopping-cart">&nbsp;&nbsp;</i><a href="{{ route('limpiar.carro') }}"> Limpiar carro</a></h4>
         @endif
-
+    <a href="{{ route('usuario.direccion') }}" >Ir al siguiente paso</a>
     </div>
 </div>
 

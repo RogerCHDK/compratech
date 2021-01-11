@@ -79,9 +79,6 @@ class LoginController extends Controller
         return redirect("login");
     }
     
-    public function combo_municipios_x_entidad($estado_id){
-        $municipios = Municipio::select('id','nombre')->where('estado_id',$estado_id)->where('status',1)->get();
-        return $municipios;
-    }
+    
     
 }
