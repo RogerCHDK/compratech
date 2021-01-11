@@ -20,7 +20,7 @@ class fuente_poder extends Seeder
             'numero_conectores' => '5',
             'producto_id' => '1',
             'status' => '1',
-        ]);
+        ]); 
 
         DB::table('fuentes_poder')->insert([ 
             'factor_forma' => 'ATX',

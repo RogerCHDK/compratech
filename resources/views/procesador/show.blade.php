@@ -11,20 +11,17 @@
 
             <div class="centro">
                 <div class="product_images">
+                    
                     <div class="product_box">
-                        <figure><img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#"></figure>
-                    </div>
+                    <figure><img src="{{route('procesador.imagen',$procesador->producto->fotos->first()->ruta)}}" alt="#" /></figure>
+                    </div> 
 
                     <div class="imagenes_c">
+                    @foreach($procesador->producto->fotos as $imagen) 
                         <div class="item" data-slide="0">
-                            <img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" width="85">
+                        <img src="{{route('procesador.imagen',$imagen->ruta)}}" alt="#"  width="85"/>
                         </div>
-                        <div class="item" data-slide="1">
-                            <img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" width="85">
-                        </div>
-                        <div class="item" data-slide="2">
-                            <img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" width="85">
-                        </div>
+                        @endforeach 
                     </div>
 
                 </div>
@@ -45,6 +42,7 @@
                             <li>Número de Nucleos:  {{$procesador->numero_nucleos}}</li>
                         </ul>
                     </div>
+                    <form action="{{ route('agregar.carro',$procesador->producto_id) }}" method="GET">  
                     <div class="precio-container">
                         <h3 class="precio">${{$procesador->producto->precio}}</h3>
                         <button class="btn btn-primary">
@@ -52,6 +50,7 @@
                             Agregar al carrito
                         </button>
                     </div>
+                    </form>
                     <p>Las existencias pueden variar sin previo aviso</p>
                 </div>
             </div>

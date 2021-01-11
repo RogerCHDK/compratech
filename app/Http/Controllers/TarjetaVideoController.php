@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TarjetaVideo;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\Response; 
 
 class TarjetaVideoController extends Controller
 {
@@ -84,4 +86,20 @@ class TarjetaVideoController extends Controller
     {
         //
     }
+
+    public function getImage($fileName)
+    {
+        $file = Storage::disk('tarjeta_video')->get($fileName);
+        return $file;
+    } 
+
+    public function showFiltro($id)
+    {
+        $tarjetas = TarjetaVideo::where('producto_id',$id)->get();
+        
+            return view('tarjeta_video.show')->with('tarjeta',$tarjetas[0]);
+        
+        
+    }
+
 }

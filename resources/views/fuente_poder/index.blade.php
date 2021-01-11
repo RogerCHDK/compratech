@@ -19,7 +19,7 @@
 
          <div class="column right"> 
             @include('fuente_poder\articulos')
-            <div class="text-center">
+            <div class="text-center"> 
                <div class="btn-group">
                   <a class="btn btn-default" href="#">Anterior</a>
                   <a class="btn btn-default active" href="#">1</a>

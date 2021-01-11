@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Gabinete;
 use Illuminate\Http\Request;
+use App\Models\Municipio;
 
 class GabinetesController extends Controller
 {
@@ -84,5 +85,16 @@ class GabinetesController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function showFiltro($id)
+    {
+        $gabinete = Gabinete::where('producto_id',$id)->get();
+        return view('Gabinete.articulo')->with('gabinete',$gabinete[0]);
+    }
+
+    public function combo_municipios_x_entidad($estado_id){
+        $municipios = Municipio::select('id','nombre')->where('estado_id',$estado_id)->where('status',1)->get();
+        return $municipios;
     }
 }

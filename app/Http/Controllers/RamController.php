@@ -89,4 +89,10 @@ class RamController extends Controller
     {
         //
     }
+
+    public function showFiltro($id)
+    {
+        $ram = Ram::where('producto_id',$id)->get();
+        return view('Ram.articulo')->with('ram',$ram[0]);
+    }
 }

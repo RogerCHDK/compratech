@@ -14,7 +14,7 @@
             <p class="precio">$ {!! $foto->ruta !!}</p>
             @endforeach
             
-            <h4><i class="fa fa-shopping-cart">&nbsp;&nbsp;</i> Agregar</h4>
+            <a href="{{ route('agregar.carro',$almacenamiento->producto_id) }}"> <h4><i class="fa fa-shopping-cart">&nbsp;&nbsp;</i>Agregar</h4></a>
          </div>
       </div>
    @endforeach

@@ -84,4 +84,58 @@ class ProductosController extends Controller
     {
         //
     }
+
+    public function cart()
+    {
+        return view('carrito_compras');
+    }
+
+    public function addTocart($id){
+        $producto = Producto::find($id);
+        $cart = session()->get('cart');
+
+        //si el carro esta vacio este es el primer produto
+        if(!$cart){
+            $cart = [
+                $id =>[
+                    "nombre" => $producto->nombre,
+                    "cantidad" => 1,
+                    "precio" => $producto->precio,
+                    "descripcion" => $producto->descripcion,
+                    "foto" => $producto->fotos->first()->ruta,
+                    "id" => $producto->id,
+                    "categoria" => $producto->categoria->nombre
+                ]
+                ];
+
+                session()->put('cart',$cart);
+                return redirect()->back()->with('success',"Producto added to cart con exito");
+        }
+
+        //si el carro no esta vacio checa si el producto existe e incrementa la cantidad
+        if(isset($cart[$id])){
+            $cart[$id]['cantidad']++;
+            session()->put('cart',$cart);
+            return redirect()->back()->with('success',"Producto added to cart con exito");
+        }
+
+        //si el item no existe en el carro se agrega al carro con la cantidad de 1
+        $cart[$id] =[
+            "nombre" => $producto->nombre,
+            "cantidad" => 1,
+            "precio" => $producto->precio,
+            "descripcion" => $producto->descripcion,
+            "foto" => $producto->fotos->first()->ruta,
+            "id" => $producto->id,
+            "categoria" => $producto->categoria->nombre
+        ];
+
+        session()->put('cart',$cart);
+        return redirect()->back()->with('success',"Producto added to cart con exito");
+    }
+
+    public function limpiarCarro(){
+        session()->forget('cart');
+        return redirect()->back()->with('success',"Carro limpiado");
+    }
 }

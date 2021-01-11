@@ -7,24 +7,20 @@
         <div class="columnas">
             <div class="izquierda">
                  @include('articulos\menu_lateral')
-            </div>
+            </div> 
 
             <div class="centro">
                 <div class="product_images">
                     <div class="product_box">
-                        <figure><img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#"></figure>
+                        <figure><img src="{{route('video.imagen',$tarjeta->producto->fotos->first()->ruta)}}" alt="#"></figure>
                     </div>
 
                     <div class="imagenes_c">
+                    @foreach($tarjeta->producto->fotos as $imagen)
                         <div class="item" data-slide="0">
-                            <img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" width="85">
+                        <img src="{{route('video.imagen',$imagen->ruta)}}" alt="#"  width="85"/>
                         </div>
-                        <div class="item" data-slide="1">
-                            <img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" width="85">
-                        </div>
-                        <div class="item" data-slide="2">
-                            <img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#" width="85">
-                        </div>
+                        @endforeach 
                     </div>
 
                 </div>
@@ -44,6 +40,7 @@
                             <li>Tipo de interfaz: {{$tarjeta->tipo_interfaz}}</li>
                         </ul>
                     </div>
+                    <form action="{{ route('agregar.carro',$tarjeta->producto_id) }}" method="GET">  
                     <div class="precio-container">
                         <h3 class="precio">${{$tarjeta->producto->precio}}</h3>
                         <button class="btn btn-primary">
@@ -51,6 +48,7 @@
                             Agregar al carrito
                         </button>
                     </div>
+                    </form>
                     <p>Las existencias pueden variar sin previo aviso</p>
                 </div>
             </div>

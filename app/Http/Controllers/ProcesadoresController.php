@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Procesador;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\Response; 
 
-class ProcesadoresController extends Controller
+class ProcesadoresController extends Controller 
 {
     /**
      * Display a listing of the resource.
@@ -83,5 +85,20 @@ class ProcesadoresController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function getImage($fileName)
+    {
+        $file = Storage::disk('procesador')->get($fileName);
+        return $file; 
+    } 
+
+    public function showFiltro($id)
+    {
+        $procesadores = Procesador::where('producto_id',$id)->get();
+        
+        return view('procesador.show')->with('procesador',$procesadores[0]);
+        
+        
     }
 }
