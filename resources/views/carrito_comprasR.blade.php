@@ -71,7 +71,7 @@
                     <p>Costo envio: $99.0</p>
                     <p>Total: ${{$valor + 99}}</p>
                     </div>
-                </th>
+                </th> 
              </table>
 
             </div>

@@ -122,7 +122,7 @@ Route::get('logout','Auth\LoginController@getLogout');
 
 
 //Carrito
-Route::get('cart','ProductosController@cart')->name('carro');
+Route::get('cart','ProductosController@cart')->name('carro'); 
 Route::get('add-to-cart/{id}','ProductosController@addToCart')->name('agregar.carro');
 Route::get('delete-cart','ProductosController@limpiarCarro')->name('limpiar.carro');
 Route::get('filtro-video/{id}','TarjetaVideoController@showFiltro')->name('filtro.video');
@@ -132,6 +132,7 @@ Route::get('filtro-almacenamiento/{id}','AlmacenamientoController@showFiltro')->
 Route::get('filtro-ram/{id}','RamController@showFiltro')->name('filtro.ram');
 Route::get('filtro-fuente/{id}','FuentePoderController@showFiltro')->name('filtro.fuente');
 Route::get('filtro-gabinete/{id}','GabinetesController@showFiltro')->name('filtro.gabinete'); 
-Route::get('direccion','UsuarioController@getDireccion')->name('usuario.direccion'); 
+Route::get('direccion/','UsuarioController@getDireccion')->name('usuario.direccion'); 
 Route::get('tarjeta-credito','UsuarioController@getTarjeta')->name('usuario.tarjeta'); 
 Route::get('confirmar-compra','UsuarioController@comprar')->name('usuario.comprar'); 
+Route::get('mis-compras','UsuarioController@misCompras')->name('usuario.miscompras'); 

@@ -33,10 +33,10 @@
                            <a class="nav-link" href="{!! asset('productos') !!}">Productos</a>
                         </li>
                         <li class="nav-item d_none">
-                           <a class="nav-link" href="{!! asset('carrito_compras') !!}"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                           <a class="nav-link" href="{{route('carro')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                         </li>
                         <li class="nav-item d_none">
-                           <a class="nav-link" href="{!! asset('logout') !!}">Cerrar Sesión</a>
+                           <a class="nav-link" href="{!! asset('logout') !!}">Cerrar Sesión</a> 
                         </li>
                         @else
                         <li class="nav-item active">
@@ -55,12 +55,12 @@
                            <a class="nav-link" href="{!! asset('register') !!}">Regístrate</a>
                         </li>
                         <li class="nav-item d_none">
-                           <a class="nav-link" href="{!! asset('carrito_compras') !!}"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                           <a class="nav-link" href="{{route('carro')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                         </li>
                         <li class="nav-item d_none">
                            <a class="nav-link" href="{!! asset('login') !!}">Iniciar Sesión</a>
                         </li>
-                        @endauth
+                        @endauth 
                      </ul>
                   </div>
                </nav>

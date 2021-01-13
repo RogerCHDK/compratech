@@ -97,12 +97,12 @@ class UsuarioController extends Controller
 
     public function getDireccion()
     {
-        $usuario = Auth::user();
+        $usuario = Auth::user(); 
         if(empty($usuario)){
             return view("iniciarsesion");
         }else{
             $estados = Estado::select('id','nombre')->orderBy('nombre')->get();
-            return view("direccion")->with('estados',$estados)->with('usuario',$usuario);
+            return view("compra.continuar_compra1")->with('estados',$estados)->with('usuario',$usuario);
         }
        
     }
@@ -110,8 +110,8 @@ class UsuarioController extends Controller
     public function getTarjeta()
     {
         $usuario = Auth::user();
-        return view("tarjeta_credito")->with('usuario',$usuario);
-    }
+        return view("compra.continuar_compra2")->with('usuario',$usuario);
+    } 
 
     public function comprar()
     {
@@ -143,6 +143,10 @@ class UsuarioController extends Controller
         }
         session()->forget('cart');
         
-        return redirect()->route('bienvenida');
+        return redirect()->route('usuario.miscompras');
+    }
+
+    public function misCompras(){
+        return view('compra.mis_compras');
     }
 }

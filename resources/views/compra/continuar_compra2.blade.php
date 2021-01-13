@@ -43,7 +43,7 @@
                         <div class="row">
                         <label><span class="hidden-xs">Datos de la Tarjeta</span> </label>
                             <div class="col-md-12 ">
-                                <input class="datos" placeholder="Nombre y Apellidos" type="type" name="Name">
+                                <input class="datos" placeholder="Nombre y Apellidos" type="type" name="Name" value="{{$usuario->nombre}} {{$usuario->ap_paterno}} {{$usuario->ap_materno}}">
                             </div>
                             <div class="col-md-12">
                                 <input class="datos" placeholder="Número de Tarjeta" type="number_format" name="Postal" minlength="16" maxlength="16" pattern="[0-9]+">
@@ -87,7 +87,9 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
+                                <a class="nav-link" href="{{route('usuario.comprar')}}">
                                 <button type="button" class="confirmo_btn" onclick="validar_tarjeta()">Confirmar Compra</button>
+                            </a>
                             </div>
                         </div>
                     </form>

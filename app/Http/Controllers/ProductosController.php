@@ -87,7 +87,7 @@ class ProductosController extends Controller
 
     public function cart()
     {
-        return view('carrito_compras');
+        return view('compra.carrito_compras');
     }
 
     public function addTocart($id){
