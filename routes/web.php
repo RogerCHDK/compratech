@@ -111,6 +111,7 @@ Route::get('fuente-imagen/{filename}', 'FuentePoderController@getImage')->name('
 Route::get('procesador-imagen/{filename}', 'ProcesadoresController@getImage')->name('procesador.imagen');
 Route::get('tarjet-madre-imagen/{filename}', 'TarjertaMadreController@getImage')->name('madre.imagen');
 Route::get('tarjeta-video-imagen/{filename}', 'TarjetaVideoController@getImage')->name('video.imagen');
+Route::get('fotos/{filename}', 'AlmacenamientoController@getImage')->name('foto.imagen');
 //login, register, logout
 Route::get('login','Auth\LoginController@getLogin');
 Route::post('login_post','Auth\LoginController@postLogin')->name("login_post");

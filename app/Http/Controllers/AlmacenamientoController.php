@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Almacenamiento;
 use App\Models\FotoProducto;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\Response; 
+
 
 class AlmacenamientoController extends Controller
 {
@@ -87,6 +90,12 @@ class AlmacenamientoController extends Controller
     {
         //
     }
+
+    public function getImage($fileName)
+    {
+        $file = Storage::disk('fotos')->get($fileName);
+        return $file;
+    } 
 
     public function showFiltro($id)
     {

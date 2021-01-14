@@ -64,6 +64,12 @@ return [
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
         ],
+        'fotos' => [
+            'driver' => 'local',
+            'root' => storage_path('app/fotos'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
 
         'fuente_poder' => [
             'driver' => 'local',

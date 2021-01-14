@@ -11,12 +11,12 @@
             <div class="centro">
                 <div class="product_images">
                     <div class="product_box">
-                        <figure><img src="{{ asset('../storage/fotos') }}/{!! $ram->producto->fotos->first()->ruta !!}" alt="#"></figure>
+                        <figure><img src="{{route('foto.imagen',$ram->producto->fotos->first()->ruta)}}" alt="#"></figure>
                     </div>
                     <div class="imagenes_c">
                     @foreach($ram->producto->fotos as $foto)
                         <div class="item" data-slide="0">
-                            <img src="{{ asset('../storage/fotos') }}/{!! $foto->ruta !!}" alt="#" width="85">
+                            <img src="{{route('foto.imagen',$foto->ruta)}}" alt="#" width="85">
                         </div>
                     @endforeach
                     </div>

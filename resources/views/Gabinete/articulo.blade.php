@@ -20,13 +20,13 @@
             <div class="centro">
                 <div class="product_images">
                     <div class="product_box">
-                        <figure><img id="myImg" src="{{ asset('../storage/fotos') }}/{!! $gabinete->producto->fotos->first()->ruta !!}" alt="#"></figure>
+                        <figure><img id="myImg" src="{{route('foto.imagen',$gabinete->producto->fotos->first()->ruta)}}" alt="#"></figure>
                     </div>
 
                     <div class="imagenes_c" id="imagenes">
                         @foreach($gabinete->producto->fotos as $foto)
                         <div class="item" id="items">
-                            <img id="myImg2" class="asdf" src="{{ asset('../storage/fotos') }}/{!! $foto->ruta !!}" alt="#" width="85">
+                            <img id="myImg2" class="asdf" src="{{route('foto.imagen',$foto->ruta)}}" alt="#" width="85">
                         </div>
                         @endforeach
                     </div>
