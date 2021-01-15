@@ -17,20 +17,20 @@
                <div class="row">
                   <div class="col-md-4 margin_bottom1">
                      <div class="product_box">
-                        <a href="vercomponentes">
+                        <a href="{{route('monitores')}}">
                            <figure><img src="{!! asset('estilo/images/monitores.jpg') !!}" alt="#"></figure>
                         </a>
-                        <a class="nav-link" href="vercomponentes">
+                        <a class="nav-link" href="{{route('monitores')}}">
                            <h3>Monitores</h3>
-                        </a>
+                        </a> 
                      </div>
                   </div>
                   <div class="col-md-4 margin_bottom1">
                      <div class="product_box">
-                        <a href="vercomponentes">
+                        <a href="{{route('productos_get')}}">
                            <figure><img src="{!! asset('estilo/images/perifericos.jpg') !!}" alt="#" /></figure>
                         </a>
-                        <a class="nav-link" href="vercomponentes">
+                        <a class="nav-link" href="{{route('productos_get')}}">
                            <h3>Accesorios</h3>
                         </a>
                      </div>

@@ -121,6 +121,12 @@ Route::post('register_post', 'Auth\RegisterController@postRegister')->name("regi
 Route::get('combo_municipios_x_entidad/{entidad_id}','GabinetesController@combo_municipios_x_entidad');
 Route::get('logout','Auth\LoginController@getLogout'); 
 
+//Monitores
+Route::get('monitores','ProductosController@monitores_get')->name("monitores");
+
+//Monitores
+Route::get('productos_get','ProductosController@productos_get')->name("productos_get");
+
 
 //Carrito
 Route::get('cart','ProductosController@cart')->name('carro'); 
