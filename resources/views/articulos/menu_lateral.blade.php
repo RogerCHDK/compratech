@@ -9,16 +9,11 @@
                 <a class="nav-link" href="#">Ver Todo</a>
             </li>
             <li class="nav-tabs">
-                <a class="nav-link" href="#">Monitores</a>
+                <a class="nav-link" href="{{ route('monitores') }}">Monitores</a>
             </li>
+            
             <li class="nav-tabs">
-                <a class="nav-link" href="#">Teclados</a>
-            </li>
-            <li class="nav-tabs">
-                <a class="nav-link" href="#">Mouse</a>
-            </li>
-            <li class="nav-tabs">
-                <a class="nav-link" href="#">Accesorios</a>
+                <a class="nav-link" href="{{ route('productos_get') }}">Accesorios</a>
             </li>
             <li class="nav-tabs">
                 <a class="nav-link" href="{{ route('tarjeta_video.index') }}">Tarjetas de Video</a>
