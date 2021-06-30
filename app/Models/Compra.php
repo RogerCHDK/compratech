@@ -8,4 +8,9 @@ class Compra extends Model
 {
     protected $table= 'compras'; 
     protected $fillable = ['user_id','precio_total','fecha_compra','status'];
+
+    public function detalle()
+    {
+        return $this->hasMany('App\Models\DetalleCompra');
+    }
 }

@@ -16,7 +16,7 @@ class User extends Authenticatable
     	return $this->belongsTo('App\Models\Estado');
     }
 
-    public function municipios(){
+    public function municipio(){
     	return $this->belongsTo('App\Models\Municipio');
     }
 }

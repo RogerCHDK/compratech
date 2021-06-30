@@ -123,7 +123,7 @@ class UsuarioController extends Controller
             $valor += $detalle['precio'] * $detalle['cantidad'];
         }
         //creacion de la compra
-        $compra=Compra::create(
+        $compra=Compra::create( 
             ['user_id' => $usuario,
              'precio_total'=>$valor+100,
              'fecha_compra'=>$fecha,
@@ -146,7 +146,10 @@ class UsuarioController extends Controller
         return redirect()->route('usuario.miscompras');
     }
 
-    public function misCompras(){
-        return view('compra.mis_compras');
+    public function misCompras(){ 
+        $usuario = Auth::user();
+        $compra = Compra::where('user_id',$usuario->id)->get();
+        return view('compra.mis_compras')->with('compras',$compra)->with('usuario',$usuario);
     }
+
 }

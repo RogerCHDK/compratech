@@ -36,6 +36,9 @@
                            <a class="nav-link" href="{{route('carro')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                         </li>
                         <li class="nav-item d_none">
+                           <a class="nav-link" href="{{route('usuario.miscompras')}}">Mis compras</a> 
+                        </li>
+                        <li class="nav-item d_none">
                            <a class="nav-link" href="{!! asset('logout') !!}">Cerrar Sesión</a> 
                         </li>
                         @else
