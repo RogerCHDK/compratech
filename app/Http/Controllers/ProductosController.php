@@ -17,6 +17,16 @@ class ProductosController extends Controller
         $productos = Producto::all();
         return view('productos.index')->with('productos',$productos); 
     }
+
+    public function monitores_get(){
+        $productos = Producto::where('status',1)->where('categoria_id',11)->get();
+        return view("Productos_cat.vercomponentes")->with('productos',$productos); 
+    }
+
+    public function productos_get(){
+        $productos = Producto::orwhere('categoria_id',9)->orwhere('categoria_id',10)->get();
+        return view("Productos_cat.vercomponentes")->with('productos',$productos); 
+    }
  
     /**
      * Show the form for creating a new resource.
@@ -48,7 +58,8 @@ class ProductosController extends Controller
      */
     public function show($id)
     {
-        //
+        $producto = Producto::find($id);
+        return view('Productos_cat.articulo')->with('producto',$producto);
     }
 
     /**

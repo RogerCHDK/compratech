@@ -20,14 +20,14 @@
             <div class="centro">
                 <div class="product_images">
                     <div class="product_box">
-                        <figure><img id="myImg" src="{{ asset('../storage/fotos') }}/{!! $almacenamiento->producto->fotos->first()->ruta !!}" alt="#"></figure>
+                        <figure><img id="myImg" src="{{route('foto.imagen',$almacenamiento->producto->fotos->first()->ruta)}}" alt="#"></figure>
                     </div>
 
                     <div class="imagenes_c">
                     @foreach($almacenamiento->producto->fotos as $foto)
                         <div class="item" id="items" data-slide="0">
-                            <img id="myImg2" class="asdf" src="{{ asset('../storage/fotos') }}/{!! $foto->ruta !!}" alt="#" width="85">
-                        </div>
+                            <img id="myImg2" class="asdf" src="{{route('foto.imagen',$foto->ruta)}}" alt="#" width="85">
+                        </div> 
                     @endforeach
                     </div>
 

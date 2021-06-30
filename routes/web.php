@@ -111,6 +111,7 @@ Route::get('fuente-imagen/{filename}', 'FuentePoderController@getImage')->name('
 Route::get('procesador-imagen/{filename}', 'ProcesadoresController@getImage')->name('procesador.imagen');
 Route::get('tarjet-madre-imagen/{filename}', 'TarjertaMadreController@getImage')->name('madre.imagen');
 Route::get('tarjeta-video-imagen/{filename}', 'TarjetaVideoController@getImage')->name('video.imagen');
+Route::get('fotos/{filename}', 'AlmacenamientoController@getImage')->name('foto.imagen');
 //login, register, logout
 Route::get('login','Auth\LoginController@getLogin');
 Route::post('login_post','Auth\LoginController@postLogin')->name("login_post");
@@ -119,6 +120,12 @@ Route::post('register_post', 'Auth\RegisterController@postRegister')->name("regi
 
 Route::get('combo_municipios_x_entidad/{entidad_id}','GabinetesController@combo_municipios_x_entidad');
 Route::get('logout','Auth\LoginController@getLogout'); 
+
+//Monitores
+Route::get('monitores','ProductosController@monitores_get')->name("monitores");
+
+//Monitores
+Route::get('productos_get','ProductosController@productos_get')->name("productos_get");
 
 
 //Carrito
