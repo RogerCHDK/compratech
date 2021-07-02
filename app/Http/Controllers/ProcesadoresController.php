@@ -101,4 +101,9 @@ class ProcesadoresController extends Controller
         
         
     }
+
+    public function callAction($method, $parameters)
+    {
+        return parent::callAction($method, array_values($parameters));
+    }
 }

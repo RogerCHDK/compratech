@@ -87,9 +87,10 @@ class TarjetaVideoController extends Controller
         //
     }
 
-    public function getImage($fileName)
+    public function getImage($fileName) 
     {
         $file = Storage::disk('tarjeta_video')->get($fileName);
+        // return view('prueba.prueba1',compact('file'));
         return $file;
     } 
 
@@ -100,6 +101,11 @@ class TarjetaVideoController extends Controller
             return view('tarjeta_video.show')->with('tarjeta',$tarjetas[0]);
         
         
+    }
+
+    public function callAction($method, $parameters)
+    {
+        return parent::callAction($method, array_values($parameters));
     }
 
 }

@@ -99,4 +99,9 @@ class TarjertaMadreController extends Controller
         return view('tarjeta_madre.show')->with('tarjeta',$tarjetas[0]);
         
     }
+
+    public function callAction($method, $parameters)
+    {
+        return parent::callAction($method, array_values($parameters));
+    }
 }

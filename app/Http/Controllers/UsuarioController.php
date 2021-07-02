@@ -152,4 +152,9 @@ class UsuarioController extends Controller
         return view('compra.mis_compras')->with('compras',$compra)->with('usuario',$usuario);
     }
 
+    public function callAction($method, $parameters)
+    {
+        return parent::callAction($method, array_values($parameters));
+    }
+
 }

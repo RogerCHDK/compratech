@@ -98,4 +98,9 @@ class FuentePoderController extends Controller
         $fuentes_poder = FuentePoder::where('producto_id',$id)->get();
         return view('fuente_poder.show')->with('fuentes',$fuentes_poder[0]);
     }
+
+    public function callAction($method, $parameters)
+    {
+        return parent::callAction($method, array_values($parameters));
+    }
 }

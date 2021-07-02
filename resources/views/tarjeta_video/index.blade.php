@@ -18,7 +18,7 @@
          </div>
 
          <div class="column right"> 
-            @include('tarjeta_video\articulos')
+            @include('tarjeta_video\articulos') 
             <div class="text-center">
                <div class="btn-group">
                   <a class="btn btn-default" href="#">Anterior</a>

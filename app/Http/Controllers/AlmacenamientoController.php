@@ -99,7 +99,12 @@ class AlmacenamientoController extends Controller
 
     public function showFiltro($id)
     {
-        $almacenamiento = Almacenamiento::where('producto_id',$id)->get();
+        $almacenamiento = Almacenamiento::where('producto_id',$id)->get(); 
         return view('Almacenamiento.articulo')->with('almacenamiento',$almacenamiento[0]);
+    }
+
+    public function callAction($method, $parameters)
+    {
+        return parent::callAction($method, array_values($parameters));
     }
 }

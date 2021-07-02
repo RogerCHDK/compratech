@@ -97,4 +97,9 @@ class GabinetesController extends Controller
         $municipios = Municipio::select('id','nombre')->where('estado_id',$estado_id)->where('status',1)->get();
         return $municipios;
     }
+
+    public function callAction($method, $parameters)
+    {
+        return parent::callAction($method, array_values($parameters));
+    }
 }

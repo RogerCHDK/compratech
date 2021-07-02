@@ -59,6 +59,7 @@ class RegisterController extends Controller
     public function getRegister(){ 
         $estados = Estado::select('id','nombre')->orderBy('nombre')->get();
         return view("registro")->with('estados',$estados);
+        
     }
 
     public function postRegister(Request $request){

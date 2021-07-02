@@ -13,9 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('bienvenida');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('bienvenida');
 });
+
 
 Route::resource('productos','ProductosController'); 
 Route::resource('computadoras','ComputadorasController');
@@ -96,7 +101,7 @@ Route::get('presupuesto3', function () {
 Route::resource('almacenamientos','AlmacenamientoController');
 
 //Gabinetes
-Route::resource('gabinetes','GabinetesController');
+Route::resource('gabinetes','GabinetesController'); 
 
 //Ram
 Route::resource('rams','RamController');
@@ -143,3 +148,8 @@ Route::get('direccion/','UsuarioController@getDireccion')->name('usuario.direcci
 Route::get('tarjeta-credito','UsuarioController@getTarjeta')->name('usuario.tarjeta'); 
 Route::get('confirmar-compra','UsuarioController@comprar')->name('usuario.comprar'); 
 Route::get('mis-compras','UsuarioController@misCompras')->name('usuario.miscompras'); 
+
+
+Route::get('prueba', function () {
+    return view('prueba.prueba1');
+})->name('prueba');

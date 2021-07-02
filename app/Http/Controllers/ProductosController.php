@@ -149,4 +149,6 @@ class ProductosController extends Controller
         session()->forget('cart');
         return redirect()->back()->with('success',"Carro limpiado");
     }
+
+    
 }
